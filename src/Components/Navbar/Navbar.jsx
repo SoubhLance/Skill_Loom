@@ -1,157 +1,72 @@
-import React from 'react';
+import React from "react";
+import govLogo from "../Images/NavbarImages/GovLogo.png";
+import skillLoomLogo from "../Images/NavbarImages/SkillLoomLogo.png";
+import pmModiPhoto from "../Images/NavbarImages/PM.png";
 
 const GovernmentNavbar = () => {
   return (
-    <div style={{ width: '100%', fontFamily: 'Arial, sans-serif' }}>
+    <div className="w-full font-sans">
       {/* Top utility bar */}
-      <div style={{
-        backgroundColor: '#374151',
-        color: 'white',
-        fontSize: '12px',
-        padding: '4px 16px',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <div className="bg-gray-800 text-white text-xs px-4 py-1 flex justify-between items-center">
+        <div className="flex items-center gap-4">
           <span>Skip to main content</span>
           <span>Screen Reader Access</span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ cursor: 'pointer' }}>🔍</span>
-          <span style={{ cursor: 'pointer' }}>A-</span>
-          <span style={{ cursor: 'pointer' }}>A</span>
-          <span style={{ cursor: 'pointer' }}>A+</span>
-          <span style={{ cursor: 'pointer' }}>हिंदी</span>
+        <div className="flex items-center gap-2">
+          <span className="cursor-pointer">🔍</span>
+          <span className="cursor-pointer">A-</span>
+          <span className="cursor-pointer">A</span>
+          <span className="cursor-pointer">A+</span>
+          <span className="cursor-pointer">हिंदी</span>
         </div>
       </div>
 
-      {/* Main header */}
-      <div style={{
-        backgroundColor: 'white',
-        padding: '16px 24px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        borderBottom: '1px solid #e5e7eb'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          {/* Government emblem */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <div style={{
-              width: '64px',
-              height: '64px',
-              backgroundColor: '#1e3a8a',
-              borderRadius: '50%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}>
-              <div style={{ color: '#fbbf24', fontSize: '24px', fontWeight: 'bold' }}>⚡</div>
-            </div>
-            <div>
-              <div style={{ color: '#1e3a8a', fontWeight: 'bold', fontSize: '18px' }}>भारत सरकार</div>
-              <div style={{ color: '#1e3a8a', fontWeight: '600' }}>Government of India</div>
-              <div style={{ color: '#1d4ed8', fontSize: '14px' }}>शिक्षा मंत्रालय | Ministry of Education</div>
+      {/* Main header with reduced height */}
+      <div className="bg-white px-6 py-1 border-b border-gray-200">
+        <div className="flex items-center justify-between w-full">
+          {/* Left: Govt logo + text */}
+          <div className="flex items-center gap-4">
+            <img src={govLogo} alt="Gov Logo" className="h-36 w-36 object-contain" style={{minHeight: '144px', minWidth: '144px'}} />
+            <div className="text-gray-900">
+              {/* Text content removed as in your code */}
             </div>
           </div>
-        </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-          {/* Digital India logo/text */}
-          <div style={{
-            color: '#2563eb',
-            fontWeight: 'bold',
-            fontSize: '24px',
-            fontFamily: 'serif'
-          }}>
-            डिजिटल इंडिया
+          {/* Center: SkillLoom logo - absolutely centered */}
+          <div className="absolute left-1/2 transform -translate-x-1/2">
+            <img src={skillLoomLogo} alt="SkillLoom Logo" className="h-16 w-auto object-contain" />
           </div>
-          
-          {/* PM image */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <div style={{
-              width: '64px',
-              height: '64px',
-              backgroundColor: '#fb923c',
-              borderRadius: '50%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              overflow: 'hidden'
-            }}>
-              <div style={{
-                width: '56px',
-                height: '56px',
-                backgroundColor: '#fdba74',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}>
-                <span style={{ color: 'white', fontSize: '12px', fontWeight: 'bold' }}>PM</span>
-              </div>
-            </div>
-            <span style={{ fontSize: '12px', color: '#6b7280', marginTop: '4px' }}>Hon'ble PM</span>
+
+          {/* Right: PM Modi photo */}
+          <div className="flex flex-col items-center">
+            <img src={pmModiPhoto} alt="PM Modi" className="h-16 w-16 object-cover" />
+            <span className="text-gray-500 text-xs mt-1">Hon'ble PM</span>
           </div>
         </div>
       </div>
 
       {/* Navigation bar */}
-      <div style={{ backgroundColor: '#2563eb', color: 'white' }}>
-        <nav style={{ display: 'flex', alignItems: 'center', padding: '12px 24px' }}>
-          <div style={{ display: 'flex', gap: '32px' }}>
-            <a href="#" style={{
-              color: 'white',
-              textDecoration: 'none',
-              transition: 'color 0.2s'
-            }} onMouseOver={(e) => e.target.style.color = '#bfdbfe'}
-               onMouseOut={(e) => e.target.style.color = 'white'}>Home</a>
-            <a href="#" style={{
-              color: 'white',
-              textDecoration: 'none',
-              transition: 'color 0.2s'
-            }} onMouseOver={(e) => e.target.style.color = '#bfdbfe'}
-               onMouseOut={(e) => e.target.style.color = 'white'}>Internship Guidelines</a>
-            <a href="#" style={{
-              color: 'white',
-              textDecoration: 'none',
-              transition: 'color 0.2s'
-            }} onMouseOver={(e) => e.target.style.color = '#bfdbfe'}
-               onMouseOut={(e) => e.target.style.color = 'white'}>Education</a>
-            <a href="#" style={{
-              color: 'white',
-              textDecoration: 'none',
-              transition: 'color 0.2s'
-            }} onMouseOver={(e) => e.target.style.color = '#bfdbfe'}
-               onMouseOut={(e) => e.target.style.color = 'white'}>About Us</a>
-            <a href="#" style={{
-              color: 'white',
-              textDecoration: 'none',
-              transition: 'color 0.2s'
-            }} onMouseOver={(e) => e.target.style.color = '#bfdbfe'}
-               onMouseOut={(e) => e.target.style.color = 'white'}>Contact</a>
-          </div>
-        </nav>
-      </div>
+      <nav className="bg-blue-600 text-white">
+        <div className="max-w-6xl mx-auto px-6 py-3 flex gap-6">
+          {["Home", "Internship Guidelines", "Education", "About Us", "Contact"].map((link) => (
+            <a
+              key={link}
+              href="#"
+              className="text-sm font-normal hover:text-blue-200 transition-colors whitespace-nowrap"
+            >
+              {link}
+            </a>
+          ))}
+        </div>
+      </nav>
 
-      {/* Breadcrumb/scrolling text */}
-      <div style={{
-        backgroundColor: '#3b82f6',
-        color: 'white',
-        padding: '8px 24px',
-        fontSize: '14px'
-      }}>
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          overflow: 'hidden'
-        }}>
-          <span style={{ whiteSpace: 'nowrap' }}>
+      {/* Breadcrumb / scrolling text */}
+      <div className="bg-blue-500 text-white px-6 py-2 text-sm overflow-hidden">
+        <div className="flex gap-8 whitespace-nowrap animate-marquee">
+          <span>
             Government Programs • Higher Education Reforms • Research and Innovation Excellence • Quality Assurance in Education
           </span>
-          <span style={{ whiteSpace: 'nowrap', marginLeft: '32px' }}>
+          <span>
             National Education Policy 2020 Implementation • Digital Education Revolution • Skill Development Programs • Higher Education
           </span>
         </div>
