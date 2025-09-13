@@ -68,25 +68,25 @@ const GovernmentNavbar = () => {
 
       {/* Breadcrumb / scrolling text */}
       <div className="bg-[#E3E3E3] text-[#2674D9] px-6 py-2 text-sm overflow-hidden">
-        <div className="flex gap-8 whitespace-nowrap animate-marquee font-bold" style={{animation: 'scroll 30s linear infinite'}}>
-          <span>
-            Government Programs  •  Higher Education Reforms  •  Research and Innovation Excellence  •  Quality Assurance in Education
-          </span>
-          <span>
-            National Education Policy 2020 Implementation  •  Digital Education Revolution  •  Skill Development Programs  •  Higher Education
-          </span>
-        </div>
-        <style jsx>{`
-        //   @keyframes scroll {
-        //     0% {
-        //       transform: translateX(100%);
-        //     }
-        //     100% {
-        //       transform: translateX(-100%);
-        //     }
-        //   }
-        `}</style>
-      </div>
+  <div className="flex gap-8 whitespace-nowrap animate-marquee font-bold" style={{animation: 'scroll 30s linear infinite'}}>
+    <span>
+      Government Programs  •  Higher Education Reforms  •  Research and Innovation Excellence  •  Quality Assurance in Education
+    </span>
+    <span>
+      National Education Policy 2020 Implementation  •  Digital Education Revolution  •  Skill Development Programs  •  Higher Education
+    </span>
+  </div>
+  <style jsx>{`
+    // @keyframes scroll {
+    //   0% {
+    //     transform: translateX(100%);
+    //   }
+    //   100% {
+    //     transform: translateX(-100%);
+    //   }
+    // }
+  `}</style>
+</div>
     </div>
   );
 };
