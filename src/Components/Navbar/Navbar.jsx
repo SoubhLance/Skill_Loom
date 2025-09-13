@@ -1,9 +1,10 @@
 import React from 'react';
 
-// Import images
-import govLogo from '../Images/NavbarImages/GovLogo.png';
-import skillLoomLogo from '../Images/NavbarImages/SkillLoomLogo.png';
-import pmModiPhoto from '../Images/NavbarImages/PM.png';
+import govLogo from "../Images/NavbarImages/GovLogo.png";
+import skillLoomLogo from "../Images/NavbarImages/SkillLoomLogo.png";
+import pmModiPhoto from "../Images/NavbarImages/PM.png";
+
+
 
 const Navbar = () => {
   return (
@@ -42,35 +43,35 @@ const Navbar = () => {
       
       {/* Blue navigation menu */}
       <div className="bg-[#2674D9] w-full">
-        <div className="px-6">
+        <div className="px-6 max-w-6xl mx-auto">
           <div className="flex items-center">
             <a 
               href="/" 
-              className="text-white no-underline px-5 py-4 text-sm font-normal hover:bg-black hover:bg-opacity-10 transition-colors duration-200"
+              className="text-white no-underline px-4 py-3 text-sm font-normal hover:bg-white hover:bg-opacity-10 transition-colors duration-200 whitespace-nowrap"
             >
               Home
             </a>
             <a 
               href="/internship-guidelines" 
-              className="text-white no-underline px-5 py-4 text-sm font-normal hover:bg-black hover:bg-opacity-10 transition-colors duration-200"
+              className="text-white no-underline px-4 py-3 text-sm font-normal hover:bg-white hover:bg-opacity-10 transition-colors duration-200 whitespace-nowrap"
             >
               Internship Guidelines
             </a>
             <a 
               href="/education" 
-              className="text-white no-underline px-5 py-4 text-sm font-normal hover:bg-black hover:bg-opacity-10 transition-colors duration-200"
+              className="text-white no-underline px-4 py-3 text-sm font-normal hover:bg-white hover:bg-opacity-10 transition-colors duration-200 whitespace-nowrap"
             >
               Education
             </a>
             <a 
               href="/about-us" 
-              className="text-white no-underline px-5 py-4 text-sm font-normal hover:bg-black hover:bg-opacity-10 transition-colors duration-200"
+              className="text-white no-underline px-4 py-3 text-sm font-normal hover:bg-white hover:bg-opacity-10 transition-colors duration-200 whitespace-nowrap"
             >
               About us
             </a>
             <a 
               href="/contact" 
-              className="text-white no-underline px-5 py-4 text-sm font-normal hover:bg-black hover:bg-opacity-10 transition-colors duration-200"
+              className="text-white no-underline px-4 py-3 text-sm font-normal hover:bg-white hover:bg-opacity-10 transition-colors duration-200 whitespace-nowrap"
             >
               Contact
             </a>
