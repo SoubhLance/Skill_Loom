@@ -182,7 +182,7 @@ export default function Homepage() {
         </div>
 
         {/* Policy Cards Section - Now properly positioned below */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 mb-6 lg:mb-8">
           {/* National Education Policy 2020 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="bg-orange-500 text-white px-6 py-4">
