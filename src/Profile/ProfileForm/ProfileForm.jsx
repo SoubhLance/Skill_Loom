@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Added missing import
+import { useNavigate } from "react-router-dom";
 import GovernmentLayout from "../../Components/Layout/GovernmentLayout";
 
 export default function ProfileForm() {
-  const navigate = useNavigate(); // Added useNavigate hook
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -48,7 +48,7 @@ export default function ProfileForm() {
   };
 
   const handleSubmit = () => {
-    // check if all fields are filled
+    // Check if all fields are filled
     for (let key in formData) {
       if (!formData[key].trim()) {
         alert("⚠ Please fill all required fields.");
@@ -58,6 +58,7 @@ export default function ProfileForm() {
 
     console.log("Form submitted:", formData);
     alert("✅ Profile setup completed successfully!");
+    navigate("/dashboard"); // ✅ Redirect to Dashboard after success
   };
 
   return (

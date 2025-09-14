@@ -7,8 +7,11 @@ import InternshipGuidelines from "./Components/InternshipGuidelines/InternshipGu
 import Education from "./Components/Education/Education.jsx";
 import AboutUs from "./Components/AboutUs/AboutUs.jsx";
 import ContactUs from "./Components/ContactUs/ContactUs.jsx";
-import ResumeUpload from "./Dashboard/ResumeUpload/ResumeUpload.jsx"; 
-import ProfileForm from "./Dashboard/ProfileForm/ProfileForm.jsx";
+import ResumeUpload from "./Profile/ResumeUpload/ResumeUpload.jsx"; 
+import ProfileForm from "./Profile/ProfileForm/ProfileForm.jsx";
+import Dashboard from "./Profile/Dashboard/Dashboard.jsx";
+import ProfilePage from "./Profile/ProfilePage/ProfilePage.jsx";
+
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -21,6 +24,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/profile-form" element={<ProfileForm />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/resume-analytics" element={<h1>Resume Analytics Page</h1>} />
+      <Route path="/profile" element={<ProfilePage />} />
+
     </Routes>
   </BrowserRouter>
 );
