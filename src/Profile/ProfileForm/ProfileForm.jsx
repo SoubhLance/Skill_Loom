@@ -18,9 +18,10 @@ export default function ProfileForm() {
     emailOtp: "",
     phoneNumber: "",
     phoneOtp: "",
-    aadharNumber: "",
+    aadharNumber: "", // This is the ABC ID
     skills: "",
     interest: "",
+    profilePhoto: null, // New field for profile photo
   });
 
   const handleInputChange = (e) => {
@@ -29,6 +30,21 @@ export default function ProfileForm() {
       ...prev,
       [name]: value,
     }));
+  };
+
+  // Handle profile photo upload
+  const handlePhotoChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setFormData((prev) => ({
+          ...prev,
+          profilePhoto: reader.result, // Base64 string
+        }));
+      };
+      reader.readAsDataURL(file);
+    }
   };
 
   const sendEmailOTP = () => {
@@ -50,15 +66,37 @@ export default function ProfileForm() {
   const handleSubmit = () => {
     // Check if all fields are filled
     for (let key in formData) {
-      if (!formData[key].trim()) {
+      // allow profilePhoto to be optional if you want — currently required per original logic
+      if (
+        formData[key] === null ||
+        formData[key] === undefined ||
+        (typeof formData[key] === "string" && !formData[key].trim())
+      ) {
         alert("⚠ Please fill all required fields.");
         return;
       }
     }
 
+    // Save important details to localStorage for Dashboard
+    localStorage.setItem("fullName", formData.fullName);
+    localStorage.setItem("abcId", formData.aadharNumber);
+    localStorage.setItem("email", formData.email);              // <- save email
+    localStorage.setItem("phoneNumber", formData.phoneNumber);  // <- save phone
+    localStorage.setItem("skills", formData.skills || "N/A");   // <- save skills
+
+    // generate a SkillLoom ID if not present (keeps consistent with ProfilePage expectation)
+    const skillloomId =
+      localStorage.getItem("skillloomId") ||
+      (formData.rollNumber ? `SL${formData.rollNumber}` : `SL${Date.now()}`);
+    localStorage.setItem("skillloomId", skillloomId);
+
+    if (formData.profilePhoto) {
+      localStorage.setItem("profilePhoto", formData.profilePhoto);
+    }
+
     console.log("Form submitted:", formData);
     alert("✅ Profile setup completed successfully!");
-    navigate("/dashboard"); // ✅ Redirect to Dashboard after success
+    navigate("/dashboard"); // Redirect to Dashboard
   };
 
   return (
@@ -144,6 +182,26 @@ export default function ProfileForm() {
                     <option value="O-">O-</option>
                   </select>
                 </div>
+              </div>
+
+              {/* Profile Photo Upload */}
+              <div>
+                <h3 className="font-semibold text-gray-800 mb-2">
+                  Upload Profile Photo
+                </h3>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={handlePhotoChange}
+                  className="border p-2 rounded w-full"
+                />
+                {formData.profilePhoto && (
+                  <img
+                    src={formData.profilePhoto}
+                    alt="Profile Preview"
+                    className="mt-3 w-24 h-24 object-cover rounded-sm border"
+                  />
+                )}
               </div>
 
               {/* Education */}
