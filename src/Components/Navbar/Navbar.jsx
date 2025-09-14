@@ -82,30 +82,45 @@ const GovernmentNavbar = () => {
         </div>
       </nav>
 
-      {/* Breadcrumb / scrolling text */}
+
+    {/* Breadcrumb / scrolling text */}
       <div className="bg-[#E3E3E3] text-[#2674D9] px-6 py-2 text-sm overflow-hidden">
-        <div className="flex whitespace-nowrap animate-marquee font-bold" style={{animation: 'scroll 30s linear infinite'}}>
-          <span className="mr-32">
-            Government Programs  •  Higher Education Reforms  •  Research and Innovation Excellence  •  Quality Assurance in Education
+      <div className="marquee font-bold">
+        <div className="track">
+          <span>
+            Government Programs • Higher Education Reforms • Research and Innovation Excellence • Quality Assurance in Education • National Education Policy 2020 Implementation • Digital Education Revolution • Skill Development Programs • Higher Education •
           </span>
-          <span className="mr-32">
-            National Education Policy 2020 Implementation  •  Digital Education Revolution  •  Skill Development Programs  •  Higher Education
-          </span>
-          <span className="mr-32">
-            Government Programs  •  Higher Education Reforms  •  Research and Innovation Excellence  •  Quality Assurance in Education
+          <span>
+            Government Programs • Higher Education Reforms • Research and Innovation Excellence • Quality Assurance in Education • National Education Policy 2020 Implementation • Digital Education Revolution • Skill Development Programs • Higher Education •
           </span>
         </div>
-        <style jsx>{`
-          @keyframes scroll {
-            0% {
-              transform: translateX(100%);
-            }
-            100% {
-              transform: translateX(-100%);
-            }
-          }
-        `}</style>
       </div>
+
+      <style jsx>{`
+        .marquee {
+          position: relative;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        .track {
+          display: inline-block;
+          animation: scroll 50s linear infinite; /* speed control */
+        }
+        .track span {
+          display: inline-block;
+          padding-right: 4rem; /* gap maintain karne ke liye */
+        }
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
+    </div>
+
     </div>
   );
 };

@@ -114,7 +114,7 @@ export default function Homepage() {
               <img
                 src={tricolorBg}
                 alt="Tricolor Background"
-                className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+                className="absolute inset-0 w-full h-full object-cover rounded-2xl opacity-100"
               />
               <div className="relative z-10 p-6">
                 <div className="text-center mb-4">
@@ -130,7 +130,7 @@ export default function Homepage() {
                   <button
                     className={`pb-1 transition-all ${
                       activeTab === "login"
-                        ? "border-b-2 border-orange-600 text-orange-700"
+                        ? "border-b-2 border-orange-300 text-orange-400"
                         : "hover:border-b-2 hover:border-orange-400 hover:text-orange-600"
                     }`}
                     onClick={() => setActiveTab("login")}
@@ -140,8 +140,8 @@ export default function Homepage() {
                   <button
                     className={`pb-1 transition-all ${
                       activeTab === "signup"
-                        ? "border-b-2 border-orange-600 text-orange-700"
-                        : "hover:border-b-2 hover:border-orange-400 hover:text-orange-600"
+                        ? "border-b-2 border-orange-300 text-orange-400"
+                        : "hover:border-b-2 hover:border-orange-200 hover:text-orange-300"
                     }`}
                     onClick={() => setActiveTab("signup")}
                   >
@@ -237,7 +237,7 @@ export default function Homepage() {
 
                   <button
                     type="submit"
-                    className="w-full py-2 rounded-lg bg-gradient-to-r from-orange-600 to-orange-700 text-white font-medium text-sm hover:from-orange-700 hover:to-orange-800 transition-all"
+                    className="w-full py-2 rounded-lg bg-gradient-to-r from-orange-400 to-orange-500 text-white font-medium text-sm hover:from-orange-700 hover:to-orange-800 transition-all"
                   >
                     {activeTab === "login" ? "Log In" : "Sign Up"}
                   </button>
@@ -257,11 +257,11 @@ export default function Homepage() {
                     onClick={handleGoogleLogin}
                     className="w-full flex items-center justify-center gap-2 border rounded-lg py-2 text-xs hover:bg-orange-50 hover:border-orange-200 transition-all"
                   >
-                    <i className="fa-brands fa-google text-orange-600"></i>{" "}
+                    <i className="fa-brands fa-google text-orange-400"></i>{" "}
                     Continue with Google
                   </button>
                   <button className="w-full flex items-center justify-center gap-2 border rounded-lg py-2 text-xs hover:bg-orange-50 hover:border-orange-200 transition-all">
-                    <i className="fa-solid fa-phone text-orange-600"></i>{" "}
+                    <i className="fa-solid fa-phone text-orange-400"></i>{" "}
                     Continue with Phone
                   </button>
                 </div>
@@ -281,7 +281,7 @@ export default function Homepage() {
               </div>
               <div className="p-6 space-y-3">
                 <div className="flex items-center text-gray-700">
-                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-orange-400 mr-2">•</span>
                   <span className="text-sm">
                     Holistic and Multidisciplinary Education
                   </span>
@@ -333,62 +333,52 @@ export default function Homepage() {
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="bg-purple-600 text-white px-6 py-4">
               <div className="flex items-center">
-                <div className="text-2xl mr-3">🏛️</div>
-                <h3 className="text-lg font-semibold">
-                  AICTE - Technical Education
-                </h3>
+                <span className="text-xl mr-3 leading-none">•</span>
+                <h3 className="text-lg font-semibold">AICTE - Technical Education</h3>
               </div>
             </div>
+
             <div className="p-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-blue-700 font-semibold mb-4">
-                    AICTE Initiatives
-                  </h4>
+                  <h4 className="text-blue-700 font-semibold mb-4">AICTE Initiatives</h4>
                   <div className="space-y-3">
                     <div className="flex items-center text-gray-700">
-                      <span className="text-purple-500 mr-2">🎓</span>
-                      <span className="text-sm">
-                        Technical Institution Approval
-                      </span>
+                      <span className="text-purple-500 mr-2 leading-none">•</span>
+                      <span className="text-sm">Technical Institution Approval</span>
                     </div>
                     <div className="flex items-center text-gray-700">
-                      <span className="text-purple-500 mr-2">⭐</span>
-                      <span className="text-sm">
-                        Quality Enhancement Programs
-                      </span>
+                      <span className="text-purple-500 mr-2 leading-none">•</span>
+                      <span className="text-sm">Quality Enhancement Programs</span>
                     </div>
                     <div className="flex items-center text-gray-700">
-                      <span className="text-purple-500 mr-2">🌟</span>
-                      <span className="text-sm">
-                        Industry-Academia Partnership
-                      </span>
+                      <span className="text-purple-500 mr-2 leading-none">•</span>
+                      <span className="text-sm">Industry-Academia Partnership</span>
                     </div>
                     <div className="flex items-center text-gray-700">
-                      <span className="text-purple-500 mr-2">🔬</span>
+                      <span className="text-purple-500 mr-2 leading-none">•</span>
                       <span className="text-sm">Research & Innovation</span>
                     </div>
                   </div>
                 </div>
+
                 <div>
-                  <h4 className="text-blue-700 font-semibold mb-4">
-                    Student Services
-                  </h4>
+                  <h4 className="text-blue-700 font-semibold mb-4">Student Services</h4>
                   <div className="space-y-3">
                     <div className="flex items-center text-gray-700">
-                      <span className="text-green-500 mr-2">📋</span>
+                      <span className="text-green-500 mr-2 leading-none">•</span>
                       <span className="text-sm">Online Grievance System</span>
                     </div>
                     <div className="flex items-center text-gray-700">
-                      <span className="text-green-500 mr-2">👥</span>
+                      <span className="text-green-500 mr-2 leading-none">•</span>
                       <span className="text-sm">Student Feedback Portal</span>
                     </div>
                     <div className="flex items-center text-gray-700">
-                      <span className="text-green-500 mr-2">🏛️</span>
+                      <span className="text-green-500 mr-2 leading-none">•</span>
                       <span className="text-sm">Institution Verification</span>
                     </div>
                     <div className="flex items-center text-gray-700">
-                      <span className="text-green-500 mr-2">📊</span>
+                      <span className="text-green-500 mr-2 leading-none">•</span>
                       <span className="text-sm">Approval Process Status</span>
                     </div>
                   </div>
@@ -397,75 +387,80 @@ export default function Homepage() {
             </div>
           </div>
 
+
           {/* Why SkillLoom Section */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden mt-6">
-            <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-4">
-              <div className="flex items-center">
-                <div className="text-2xl mr-3">🎯</div>
-                <h3 className="text-lg font-semibold">What is SkillLoom?</h3>
-              </div>
+          <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-4">
+            <div className="flex items-center">
+              <span className="text-2xl mr-3 leading-none">•</span>
+              <h3 className="text-lg font-semibold">What is SkillLoom?</h3>
             </div>
-            <div className="p-6">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* Video Section */}
-                <div className="bg-gray-200 rounded-lg flex items-center justify-center h-64">
-                  <div className="text-center">
-                    <div className="text-6xl text-gray-400 mb-2">▶️</div>
-                    <p className="text-gray-600 font-semibold text-lg">
-                      VIDEO
-                    </p>
-                  </div>
-                </div>
+          </div>
+          
+          <div className="p-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Video Section */}
+              <div className="bg-gray-100 rounded-lg overflow-hidden h-64">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/tMecymyZOqs"
+                  title="SkillLoom - AI-Based Internship Recommendation Engine"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
 
-                {/* Why SkillLoom Content */}
-                <div>
-                  <h4 className="text-orange-700 font-semibold mb-4 text-xl">
-                    Why SkillLoom?
-                  </h4>
-                  <div className="space-y-4">
-                    <div className="flex items-start text-gray-700">
-                      <span className="text-orange-500 mr-3 text-lg flex-shrink-0">
-                        🎯
-                      </span>
-                      <span className="text-sm leading-relaxed">
-                        It helps students find personalized internship
-                        opportunities based on their skills, education profile,
-                        and career goals.
-                      </span>
-                    </div>
-                    <div className="flex items-start text-gray-700">
-                      <span className="text-orange-500 mr-3 text-lg flex-shrink-0">
-                        🤖
-                      </span>
-                      <span className="text-sm leading-relaxed">
-                        Uses AI/ML models to match students' skills with
-                        industry requirements.
-                      </span>
-                    </div>
-                    <div className="flex items-start text-gray-700">
-                      <span className="text-orange-500 mr-3 text-lg flex-shrink-0">
-                        ⚡
-                      </span>
-                      <span className="text-sm leading-relaxed">
-                        Saves time by directly connecting students with the most
-                        relevant internships instead of browsing through
-                        irrelevant ones.
-                      </span>
-                    </div>
-                    <div className="flex items-start text-gray-700">
-                      <span className="text-orange-500 mr-3 text-lg flex-shrink-0">
-                        🌍
-                      </span>
-                      <span className="text-sm leading-relaxed">
-                        Builds a stronger bridge between education and industry
-                        for India's youth.
-                      </span>
-                    </div>
+              {/* Why SkillLoom Content */}
+              <div>
+                <h4 className="text-orange-700 font-semibold mb-4 text-xl">
+                  Why SkillLoom?
+                </h4>
+                <div className="space-y-4">
+                  <div className="flex items-start text-gray-700">
+                    <span className="text-orange-500 mr-3 text-lg flex-shrink-0 leading-none">
+                      •
+                    </span>
+                    <span className="text-sm leading-relaxed">
+                      It helps students find personalized internship
+                      opportunities based on their skills, education profile,
+                      and career goals.
+                    </span>
+                  </div>
+                  <div className="flex items-start text-gray-700">
+                    <span className="text-orange-500 mr-3 text-lg flex-shrink-0 leading-none">
+                      •
+                    </span>
+                    <span className="text-sm leading-relaxed">
+                      Uses AI/ML models to match students' skills with
+                      industry requirements.
+                    </span>
+                  </div>
+                  <div className="flex items-start text-gray-700">
+                    <span className="text-orange-500 mr-3 text-lg flex-shrink-0 leading-none">
+                      •
+                    </span>
+                    <span className="text-sm leading-relaxed">
+                      Saves time by directly connecting students with the most
+                      relevant internships instead of browsing through
+                      irrelevant ones.
+                    </span>
+                  </div>
+                  <div className="flex items-start text-gray-700">
+                    <span className="text-orange-500 mr-3 text-lg flex-shrink-0 leading-none">
+                      •
+                    </span>
+                    <span className="text-sm leading-relaxed">
+                      Builds a stronger bridge between education and industry
+                      for India's youth.
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
 
           {/* Program Flow */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden mt-6">
@@ -476,7 +471,7 @@ export default function Homepage() {
               <img
                 src={Programflow}
                 alt="Program Flow"
-                className="max-w-full h-auto rounded-lg shadow-md"
+                className="w-full max-w-4xl h-auto rounded-lg shadow-md object-contain"
               />
             </div>
           </div>
