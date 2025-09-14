@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <GovernmentLayout>
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-[#4472C4] to-[#5B9BD5] text-white py-10 text-center">
+      <div className="bg-[#2674D9] text-white py-10 text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">About Us</h1>
         <p className="text-lg opacity-90">
           Ministry of Education, Government of India

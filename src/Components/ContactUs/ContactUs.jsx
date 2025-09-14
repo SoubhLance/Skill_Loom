@@ -14,7 +14,7 @@ const ContactUs = () => {
 
       {/* Page Container */}
       <div className="max-w-6xl mx-auto my-6 bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="bg-gradient-to-r from-blue-700 to-blue-500 text-white text-center py-8 px-4">
+        <div className="bg-[#2674D9] text-white text-center py-8 px-4">
           <h1 className="text-3xl font-bold">Contact Us</h1>
           <p className="mt-2 text-lg opacity-90">
             Ministry of Education, Government of India

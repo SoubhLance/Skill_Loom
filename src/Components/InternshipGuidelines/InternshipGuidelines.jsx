@@ -5,7 +5,7 @@ const InternshipGuidelines = () => {
   return (
     <GovernmentLayout>
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-10 text-center">
+      <div className="bg-[#2674D9] text-white py-10 text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">Internship Guidelines</h1>
         <p className="text-lg opacity-90">
           All India Council for Technical Education (AICTE) & Ministry of Education Guidelines
