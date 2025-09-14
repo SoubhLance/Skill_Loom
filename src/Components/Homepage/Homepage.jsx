@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import skillLoomLogo from "../Images/NavbarImages/SkillLoomLogo.png";
+import Programflow from "../Images/Homepage/Programflow.png";
 import tricolorBg from "../Images/Homepage/Tricolor.png";
 import educationMinister from "../Images/Homepage/EducationMinister.jpg";
+import skillLoomLogo from "../Images/NavbarImages/SkillLoomLogo.png";
 
 export default function Homepage() {
   const [activeTab, setActiveTab] = useState("login");
@@ -190,19 +191,19 @@ export default function Homepage() {
             </div>
             <div className="p-6 space-y-3">
               <div className="flex items-center text-gray-700">
-                <span className="text-orange-500 mr-2">•</span>
+                <span className="text-orange-500 mr-2">â€¢</span>
                 <span className="text-sm">Holistic and Multidisciplinary Education</span>
               </div>
               <div className="flex items-center text-gray-700">
-                <span className="text-orange-500 mr-2">•</span>
+                <span className="text-orange-500 mr-2">â€¢</span>
                 <span className="text-sm">Critical Thinking and Creativity</span>
               </div>
               <div className="flex items-center text-gray-700">
-                <span className="text-orange-500 mr-2">•</span>
+                <span className="text-orange-500 mr-2">â€¢</span>
                 <span className="text-sm">Technology Integration</span>
               </div>
               <div className="flex items-center text-gray-700">
-                <span className="text-orange-500 mr-2">•</span>
+                <span className="text-orange-500 mr-2">â€¢</span>
                 <span className="text-sm">Skill-based Learning</span>
               </div>
             </div>
@@ -215,19 +216,19 @@ export default function Homepage() {
             </div>
             <div className="p-6 space-y-3">
               <div className="flex items-center text-gray-700">
-                <span className="text-blue-500 mr-2">•</span>
+                <span className="text-blue-500 mr-2">â€¢</span>
                 <span className="text-sm">DIKSHA Platform</span>
               </div>
               <div className="flex items-center text-gray-700">
-                <span className="text-blue-500 mr-2">•</span>
+                <span className="text-blue-500 mr-2">â€¢</span>
                 <span className="text-sm">PM eVIDYA Programme</span>
               </div>
               <div className="flex items-center text-gray-700">
-                <span className="text-blue-500 mr-2">•</span>
+                <span className="text-blue-500 mr-2">â€¢</span>
                 <span className="text-sm">SWAYAM Online Courses</span>
               </div>
               <div className="flex items-center text-gray-700">
-                <span className="text-blue-500 mr-2">•</span>
+                <span className="text-blue-500 mr-2">â€¢</span>
                 <span className="text-sm">Digital Infrastructure</span>
               </div>
             </div>
@@ -287,6 +288,143 @@ export default function Homepage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Why SkillLoom Section */}
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden mt-6">
+          <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-4">
+            <div className="flex items-center">
+              <div className="text-2xl mr-3">🎯</div>
+              <h3 className="text-lg font-semibold">What is SkillLoom?</h3>
+            </div>
+          </div>
+          <div className="p-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Video Section */}
+              <div className="bg-gray-200 rounded-lg flex items-center justify-center h-64">
+                <div className="text-center">
+                  <div className="text-6xl text-gray-400 mb-2">▶️</div>
+                  <p className="text-gray-600 font-semibold text-lg">VIDEO</p>
+                </div>
+              </div>
+              
+              {/* Why SkillLoom Content */}
+              <div>
+                <h4 className="text-orange-700 font-semibold mb-4 text-xl">Why SkillLoom?</h4>
+                <div className="space-y-4">
+                  <div className="flex items-start text-gray-700">
+                    <span className="text-orange-500 mr-3 text-lg flex-shrink-0">🎯</span>
+                    <span className="text-sm leading-relaxed">It helps students find personalized internship opportunities based on their skills, education profile, and career goals.</span>
+                  </div>
+                  <div className="flex items-start text-gray-700">
+                    <span className="text-orange-500 mr-3 text-lg flex-shrink-0">🤖</span>
+                    <span className="text-sm leading-relaxed">Uses AI/ML models to match students' skills with industry requirements.</span>
+                  </div>
+                  <div className="flex items-start text-gray-700">
+                    <span className="text-orange-500 mr-3 text-lg flex-shrink-0">⚡</span>
+                    <span className="text-sm leading-relaxed">Saves time by directly connecting students with the most relevant internships instead of browsing through irrelevant ones.</span>
+                  </div>
+                  <div className="flex items-start text-gray-700">
+                    <span className="text-orange-500 mr-3 text-lg flex-shrink-0">🚀</span>
+                    <span className="text-sm leading-relaxed">Provides a platform aligned with the Smart India Hackathon (SIH) goal of fostering innovation and employability.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Benefits of SkillLoom Section */}
+        <div className="bg-white mt-6 p-8">
+          {/* Main Heading */}
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-orange-500 mb-4 uppercase tracking-wide">
+              Benefits of Skill-Loom
+            </h2>
+            <div className="w-full h-1 bg-gradient-to-r from-orange-400 to-red-400 mb-8"></div>
+          </div>
+
+          {/* Benefits Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Skill-Internship Matching */}
+            <div className="text-center">
+              <h3 className="text-blue-700 font-bold text-lg mb-4">Skill–Internship Matching</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                Matches user's skills (from resume or input) with the required skills of internships.
+              </p>
+              <div className="w-full h-0.5 bg-orange-400"></div>
+            </div>
+
+            {/* Similarity Score */}
+            <div className="text-center">
+              <h3 className="text-blue-700 font-bold text-lg mb-4">Similarity Score</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                Shows how closely a student's profile matches an internship.
+              </p>
+              <div className="w-full h-0.5 bg-orange-400"></div>
+            </div>
+
+            {/* Skill Gap Identification */}
+            <div className="text-center">
+              <h3 className="text-blue-700 font-bold text-lg mb-4">Skill Gap Identification</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                Highlights missing skills required for certain internships.
+              </p>
+              <div className="w-full h-0.5 bg-orange-400"></div>
+            </div>
+
+            {/* Learning Recommendations */}
+            <div className="text-center">
+              <h3 className="text-blue-700 font-bold text-lg mb-4">Learning Recommendations</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                Suggests resources to fill those gaps.
+              </p>
+              <div className="w-full h-0.5 bg-orange-400"></div>
+            </div>
+
+            {/* Recognition & Opportunities */}
+            <div className="text-center">
+              <h3 className="text-blue-700 font-bold text-lg mb-4">Recognition & Opportunities</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                Students get better visibility and chances in competitive environments.
+              </p>
+              <div className="w-full h-0.5 bg-orange-400"></div>
+            </div>
+
+            {/* Innovation & Growth */}
+            <div className="text-center">
+              <h3 className="text-blue-700 font-bold text-lg mb-4">Innovation & Growth</h3>
+              <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                Encourages students to apply their knowledge in real-world projects.
+              </p>
+              <div className="w-full h-0.5 bg-orange-400"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* How SkillLoom Works Section */}
+        <div className="bg-white mt-6 p-8 rounded-lg shadow-lg">
+          {/* Main Heading */}
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 lowercase">
+              how skill loom works?
+            </h2>
+            <div className="w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mb-8"></div>
+          </div>
+
+          {/* Workflow Image Placeholder */}
+          <div className="flex justify-center items-center w-full">
+            
+              <div className="text-center">
+               <img 
+                  src={Programflow} 
+                  alt="SkillLoom Workflow" 
+                  className="bg-white rounded-xl shadow-md max-w-3xl w-full h-auto p-4"
+                />
+                
+              </div>
+            
           </div>
         </div>
       </div>

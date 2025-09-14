@@ -2,6 +2,9 @@ import React from "react";
 import govLogo from "../Images/NavbarImages/GovLogo.png";
 import skillLoomLogo from "../Images/NavbarImages/SkillLoomLogo.png";
 import pmModiPhoto from "../Images/NavbarImages/PM.png";
+import swachhBharatLogo from "../Images/NavbarImages/swachbharat.jpg";
+import { Link } from "react-router-dom";
+
 
 const GovernmentNavbar = () => {
   return (
@@ -41,52 +44,68 @@ const GovernmentNavbar = () => {
             <img src={skillLoomLogo} alt="SkillLoom Logo" className="h-20 w-auto object-contain" />
           </div>
 
-          {/* Right: PM Modi photo */}
-          <div className="flex items-center justify-end flex-1">
+          {/* Right: PM Modi photo and Swachh Bharat logo */}
+          <div className="flex items-center justify-end flex-1 gap-6">
+            {/* PM Modi */}
             <div className="flex flex-col items-center">
               <img src={pmModiPhoto} alt="PM Modi" className="h-16 w-16 object-cover" />
               <span className="text-[#1E3AA7] text-xs mt-1 font-bold">Hon'ble PM</span>
+            </div>
+            
+            {/* Swachh Bharat */}
+            <div className="flex flex-col items-center">
+              <img src={swachhBharatLogo} alt="Swachh Bharat" className="h-16 w-22 " />
+              
             </div>
           </div>
         </div>
       </div>
 
       {/* Navigation bar */}
-      <nav className="bg-[#2674D9] text-white">
+     <nav className="bg-[#2674D9] text-white">
         <div className="max-w-6xl mx-auto px-6 py-3 flex justify-center gap-6">
-          {["Home", "Internship Guidelines", "Education", "About Us", "Contact"].map((link) => (
-            <a
-              key={link}
-              href="#"
-              className="text-sm font-normal hover:text-blue-200 transition-colors whitespace-nowrap"
-            >
-              {link}
-            </a>
-          ))}
+          <Link to="/" className="text-sm font-normal hover:text-blue-200 transition-colors">
+            Home
+          </Link>
+          <Link to="/internship-guidelines" className="text-sm font-normal hover:text-blue-200 transition-colors">
+            Internship Guidelines
+          </Link>
+          <Link to="/education" className="text-sm font-normal hover:text-blue-200 transition-colors">
+            Education
+          </Link>
+          <Link to="/about-us" className="text-sm font-normal hover:text-blue-200 transition-colors">
+            About Us
+          </Link>
+          <Link to="/contact-us" className="text-sm font-normal hover:text-blue-200 transition-colors">
+            Contact Us
+          </Link>
         </div>
       </nav>
 
       {/* Breadcrumb / scrolling text */}
       <div className="bg-[#E3E3E3] text-[#2674D9] px-6 py-2 text-sm overflow-hidden">
-  <div className="flex gap-8 whitespace-nowrap animate-marquee font-bold" style={{animation: 'scroll 30s linear infinite'}}>
-    <span>
-      Government Programs  •  Higher Education Reforms  •  Research and Innovation Excellence  •  Quality Assurance in Education
-    </span>
-    <span>
-      National Education Policy 2020 Implementation  •  Digital Education Revolution  •  Skill Development Programs  •  Higher Education
-    </span>
-  </div>
-  <style jsx>{`
-    // @keyframes scroll {
-    //   0% {
-    //     transform: translateX(100%);
-    //   }
-    //   100% {
-    //     transform: translateX(-100%);
-    //   }
-    // }
-  `}</style>
-</div>
+        <div className="flex whitespace-nowrap animate-marquee font-bold" style={{animation: 'scroll 30s linear infinite'}}>
+          <span className="mr-32">
+            Government Programs  •  Higher Education Reforms  •  Research and Innovation Excellence  •  Quality Assurance in Education
+          </span>
+          <span className="mr-32">
+            National Education Policy 2020 Implementation  •  Digital Education Revolution  •  Skill Development Programs  •  Higher Education
+          </span>
+          <span className="mr-32">
+            Government Programs  •  Higher Education Reforms  •  Research and Innovation Excellence  •  Quality Assurance in Education
+          </span>
+        </div>
+        <style jsx>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(100%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+        `}</style>
+      </div>
     </div>
   );
 };
