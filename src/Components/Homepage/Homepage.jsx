@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";   // ⬅️ Import navigate
 import Programflow from "../Images/Homepage/Programflow.png";
 import tricolorBg from "../Images/Homepage/Tricolor.png";
 import educationMinister from "../Images/Homepage/EducationMinister.jpg";
@@ -15,6 +16,8 @@ import {
 } from "firebase/auth";
 
 export default function Homepage() {
+  const navigate = useNavigate();   // ⬅️ Create navigate instance
+
   const [activeTab, setActiveTab] = useState("login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -36,6 +39,7 @@ export default function Homepage() {
         await signInWithEmailAndPassword(auth, email, password);
         alert("Login successful!");
       }
+      navigate("/resume-upload");   // ⬅️ Redirect after success
     } catch (error) {
       alert(error.message);
       console.error(error);
@@ -48,6 +52,7 @@ export default function Homepage() {
     try {
       await signInWithPopup(auth, googleProvider);
       alert("Google login successful!");
+      navigate("/resume-upload");   // ⬅️ Redirect after Google login
     } catch (error) {
       alert(error.message);
       console.error(error);
