@@ -7,7 +7,8 @@ import InternshipGuidelines from "./Components/InternshipGuidelines/InternshipGu
 import Education from "./Components/Education/Education.jsx";
 import AboutUs from "./Components/AboutUs/AboutUs.jsx";
 import ContactUs from "./Components/ContactUs/ContactUs.jsx";
-import ResumeUpload from "./Dashboard/ResumeUpload/ResumeUpload.jsx"; // ✅ fixed path
+import ResumeUpload from "./Dashboard/ResumeUpload/ResumeUpload.jsx"; 
+import ProfileForm from "./Dashboard/ProfileForm/ProfileForm.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/education" element={<Education />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/contact-us" element={<ContactUs />} />
+      <Route path="/profile-form" element={<ProfileForm />} />
     </Routes>
   </BrowserRouter>
 );

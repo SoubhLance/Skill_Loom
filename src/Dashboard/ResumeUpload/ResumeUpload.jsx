@@ -1,8 +1,32 @@
-import React from "react";
-import { Upload, FileText } from "lucide-react"; 
-import GovernmentLayout from "../../Components/Layout/GovernmentLayout"; // ✅ fixed path
+import React, { useRef, useState } from "react";
+import { Upload, FileText } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import GovernmentLayout from "../../Components/Layout/GovernmentLayout";
 
 export default function ResumeUpload() {
+  const fileInputRef = useRef(null);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
+  // Trigger file picker
+  const handleUploadClick = () => {
+    fileInputRef.current.click();
+  };
+
+  // Handle file selection
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setLoading(true);
+
+      // Simulate analyzing resume for 10 seconds
+      setTimeout(() => {
+        setLoading(false);
+        navigate("/profile-form"); // ✅ go to ProfileForm after analyzing
+      }, 10000);
+    }
+  };
+
   return (
     <GovernmentLayout>
       <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
@@ -36,9 +60,32 @@ export default function ResumeUpload() {
                 <p className="text-xs text-gray-500 mb-4">
                   📄 PDF, DOC, DOCX supported
                 </p>
-                <button className="w-full py-2 rounded-lg bg-orange-500 text-white font-medium hover:bg-orange-600 transition">
-                  Choose This Option
-                </button>
+
+                {/* Hidden file input */}
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  onChange={handleFileChange}
+                  accept=".pdf,.doc,.docx"
+                  className="hidden"
+                />
+
+                {/* Upload button */}
+                {!loading && (
+                  <button
+                    onClick={handleUploadClick}
+                    className="w-full py-2 rounded-lg bg-orange-500 text-white font-medium hover:bg-orange-600 transition"
+                  >
+                    Choose File
+                  </button>
+                )}
+
+                {/* Loader */}
+                {loading && (
+                  <p className="mt-3 text-sm text-orange-600 font-medium animate-pulse">
+                    ⏳ Analyzing your resume...
+                  </p>
+                )}
               </div>
             </div>
 
@@ -58,8 +105,11 @@ export default function ResumeUpload() {
                 <p className="text-xs text-green-600 mb-4">
                   ✅ Step by step guided form
                 </p>
-                <button className="w-full py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
-                  Choose This Option
+                <button
+                  onClick={() => navigate("/profile-form")}
+                  className="w-full py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
+                >
+                  Fill Manually
                 </button>
               </div>
             </div>
