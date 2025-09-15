@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skill Extractor — Flask Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; background:#f6f7fb; margin:0; padding:24px; color:#222; }
+    h1 { margin: 0 0 16px; font-size: 22px; }
+    .card { background:#fff; border:1px solid #e4e7ee; border-radius:12px; padding:16px; max-width:860px; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin:8px 0; }
+    label { font-weight:600; }
+    input[type="number"] { width: 120px; }
+    input[type="file"] { padding:6px 0; }
+    button { padding:10px 14px; border:none; border-radius:8px; background:#4f46e5; color:#fff; cursor:pointer; }
+    button:disabled { opacity:0.6; cursor:not-allowed; }
+    .status { margin-top:10px; font-size:14px; }
+    .status.ok { color:#0a7d4f; }
+    .status.err { color:#b71c1c; }
+    pre { background:#0b1020; color:#e6edf3; padding:14px; border-radius:10px; overflow:auto; max-height:420px; white-space:pre-wrap; }
+    small { color:#667085; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Skill Extractor — Flask Test (Plain Text)</h1>
+
+    <div class="row">
+      <label for="fileInput">Resume file</label>
+      <input id="fileInput" type="file" accept=".pdf,.docx,.txt" />
+    </div>
+
+    <div class="row">
+      <label for="cutoff">Cutoff</label>
+      <input id="cutoff" type="number" value="92" min="70" max="99" />
+      <label for="ngrams">Max n-grams</label>
+      <input id="ngrams" type="number" value="4" min="1" max="8" />
+      <button id="submitBtn">Extract Skills</button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <h3>Response</h3>
+    <pre id="result">—</pre>
+
+    <details>
+      <summary>Help</summary>
+      <ul>
+        <li>Run server: <code>python app.py</code> → open <code>http://127.0.0.1:5000</code></li>
+        <li>Allowed: <b>.pdf</b>, <b>.docx</b>, <b>.txt</b></li>
+        <li>Output is plain text (no JSON braces/commas).</li>
+      </ul>
+    </details>
+  </div>
+
+  <script>
+    const fileEl = document.getElementById("fileInput");
+    const cutoffEl = document.getElementById("cutoff");
+    const ngramsEl = document.getElementById("ngrams");
+    const statusEl = document.getElementById("status");
+    const resultEl = document.getElementById("result");
+    const btn = document.getElementById("submitBtn");
+
+    async function extract() {
+      const file = fileEl.files[0];
+      const cutoff = parseInt(cutoffEl.value || "92", 10);
+      const ngrams = parseInt(ngramsEl.value || "4", 10);
+
+      if (!file) {
+        statusEl.textContent = "Please choose a .pdf, .docx, or .txt file";
+        statusEl.className = "status err";
+        return;
+      }
+
+      statusEl.textContent = "Uploading and extracting…";
+      statusEl.className = "status";
+      btn.disabled = true; resultEl.textContent = "—";
+
+      try {
+        const url = new URL("/extract", window.location.origin);
+        url.searchParams.set("cutoff", String(cutoff));
+        url.searchParams.set("max_ngrams", String(ngrams));
+
+        const form = new FormData();
+        form.append("file", file, file.name); // IMPORTANT: field name "file"
+
+        const res = await fetch(url.toString(), { method: "POST", body: form });
+        const text = await res.text();
+
+        if (!res.ok) {
+          statusEl.textContent = "❌ " + text;
+          statusEl.className = "status err";
+          resultEl.textContent = text || "(no body)";
+          return;
+        }
+
+        statusEl.textContent = "✅ Extraction successful";
+        statusEl.className = "status ok";
+        resultEl.textContent = text || "(empty)";
+      } catch (e) {
+        statusEl.textContent = "❌ " + (e.message || e);
+        statusEl.className = "status err";
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      extract();
+    });
+  </script>
+</body>
+</html>

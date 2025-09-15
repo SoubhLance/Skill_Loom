@@ -1,0 +1,301 @@
+Job Role,Skills,Experience/Eligibility,Target_Students,Domain
+Data Analyst,"Python, SQL, Excel, Pandas, NumPy, Data Cleaning, Data Visualization, Tableau, PowerBI, Statistics, Report Writing, Problem Solving, Communication",0–2 yrs,College,Technical
+AI/ML Intern,"Python, TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas, Data Preprocessing, Feature Engineering, Model Evaluation, Machine Learning Algorithms, Deep Learning, Neural Networks, Data Visualization, Problem Solving",0–2 yrs,College,Technical
+Software Developer,"Java, C++, Python, Git, Debugging, OOP Concepts, Data Structures, Algorithms, SQL, REST APIs, Unit Testing, Problem Solving, Communication",0–2 yrs,College,Technical
+Web Developer,"HTML, CSS, JavaScript, React, Node.js, Bootstrap, Responsive Design, Git, REST APIs, Debugging, Cross-browser Testing, Problem Solving",0–2 yrs,College,Technical
+Cloud Engineer,"AWS Basics, Azure, GCP, Linux, Networking, Security Fundamentals, Virtualization, DevOps Basics, Docker, Kubernetes, Scripting, Monitoring, Problem Solving",0–2 yrs,College,Technical
+Cybersecurity Intern,"Ethical Hacking, Network Security, Python, Penetration Testing, Vulnerability Assessment, Firewalls, Linux, Cryptography Basics, Malware Analysis, Incident Response, Problem Solving",0–2 yrs,College,Research
+Robotics Intern,"Arduino, Raspberry Pi, Python, C/C++, Sensors, Motors, Circuit Design, Embedded Systems, Robotics Algorithms, Control Systems, Debugging, CAD, Problem Solving",0–2 yrs,College,Technical
+Electrical Engineer,"Circuit Design, MATLAB, Electronics Testing, PCB Design, Power Systems, Control Systems, Signal Processing, Troubleshooting, Simulation, Problem Solving",0–2 yrs,College,Technical
+Mechanical Engineer,"CAD, SolidWorks, Thermodynamics, Fluid Mechanics, Material Science, Problem Solving, Manufacturing Processes, MATLAB, Stress Analysis, 3D Modelling, AutoCAD",0–2 yrs,College,Technical
+Civil Engineer,"AutoCAD, STAAD Pro, Surveying, Structural Analysis, Construction Materials, Project Planning, Drafting, Site Safety, Problem Solving, Report Writing",0–2 yrs,College,Technical
+Environmental Researcher,"GIS, Data Collection, Soil Testing, Water Quality Analysis, Report Writing, Statistical Analysis, Research Methodology, Fieldwork, Problem Solving",0–2 yrs,College,Research
+Biomedical Intern,"MATLAB, Circuit Design, Bioinstrumentation, Signal Processing, Data Analysis, Lab Safety, Microcontrollers, Biomedical Sensors, Documentation, Problem Solving",0–2 yrs,College,Medical/Technical
+Pharma Intern,"Lab Techniques, Sample Analysis, Chemical Handling, Documentation, Safety Protocols, Quality Control, Equipment Handling, Problem Solving",0–2 yrs,College,Medical
+Nursing Intern,"Patient Care, Vital Signs Monitoring, Basic Pharmacology, Hygiene, Communication, Record Keeping, Empathy, Basic Clinical Procedures",Beginner,School,Medical
+Lab Assistant,"Observation, Basic Experiment Handling, Recording, Safety Protocols, Equipment Cleaning, Note-taking, Attention to Detail",Beginner,School,Medical
+STEM Club Intern,"Basic Coding, Science Experiments, Robotics, Logical Thinking, Problem Solving, Creativity, Communication, Teamwork",Beginner,School,Technical
+Graphic Designer,"Photoshop, Illustrator, Figma, Typography, Color Theory, Branding, Layout Design, UI/UX Basics, Creativity, Attention to Detail",0–2 yrs,College,Non-Technical
+Animation Intern,"Adobe Animate, Blender, Storyboarding, Creativity, 2D/3D Animation, Timing, Character Design, Video Editing, Teamwork",0–2 yrs,College,Non-Technical
+Digital Marketing Intern,"SEO, Google Analytics, Content Creation, Social Media Management, Copywriting, Excel, Email Marketing, Basic Design Tools, Creativity, Communication",0–2 yrs,College,Non-Technical
+Content Writer,"Creative Writing, Research, Grammar, SEO, Blogging, Proofreading, Communication, Editing, Storytelling, Time Management",0–2 yrs,College,Non-Technical
+Finance Intern,"Accounting, Financial Analysis, Excel, Reporting, Bookkeeping, Data Entry, MS Office, Problem Solving, Communication",0–2 yrs,College,Finance
+Investment Analyst,"Financial Modeling, Valuation, Excel, Market Research, Accounting, Corporate Finance, PowerPoint, Reporting, Critical Thinking",0–2 yrs,College,Finance
+HR Intern,"HR Policies, Recruitment Basics, Communication, MS Office, Resume Screening, Employee Engagement, Time Management, Documentation",0–2 yrs,College,Non-Technical
+AI/ML (School),"Scratch, Python Basics, Logical Thinking, Creativity, Problem Solving, Algorithmic Thinking, Teamwork",Beginner,School,Technical
+Drone Engineer,"CAD, Arduino, Motors, Sensors, Flight Dynamics, Python, Embedded Systems, Control Systems, Debugging, Teamwork, Problem Solving",0–2 yrs,College,Aerospace
+Aerodynamics Researcher,"CFD, MATLAB, Aerodynamics Principles, Data Analysis, Simulation, Problem Solving, Report Writing, Experimental Design",0–2 yrs,College,Aerospace
+Accounting Intern,"MS Excel, Accounting Principles, Financial Reporting, Bookkeeping, Ledger Management, Documentation, Attention to Detail",0–2 yrs,College,Finance
+UX Researcher,"Figma, Wireframing, Prototyping, Usability Testing, Research Methods, User Interviews, Communication, Analysis, Reporting",0–2 yrs,College,Non-Technical
+Fullstack Developer,"HTML, CSS, JavaScript, React, Node.js, SQL, REST APIs, Git, Testing, Debugging, Problem Solving, Agile Basics",0–2 yrs,College,Technical
+Mechanical Designer,"AutoCAD, SolidWorks, CAD Modelling, Material Knowledge, Manufacturing Basics, Problem Solving, MATLAB, Teamwork",0–2 yrs,College,Technical
+Electrical Designer,"Circuit Design, AutoCAD Electrical, MATLAB, Electronics Testing, Troubleshooting, Problem Solving, Documentation",0–2 yrs,College,Technical
+Chemical Engineer,"Process Design, Lab Safety, Chemical Calculations, MATLAB, Problem Solving, Quality Control, Documentation, Teamwork",0–2 yrs,College,Technical
+Agriculture Intern,"Soil Testing, Irrigation, Crop Science, Data Collection, Pest Management, Farm Tools, Documentation, Problem Solving",0–2 yrs,College,Agriculture
+Horticulture Intern,"Plant Biology, Soil Testing, Irrigation Techniques, Garden Tools, Pest Control, Documentation, Observation, Problem Solving",0–2 yrs,College,Agriculture
+Veterinary Intern,"Animal Care, Basic Diagnosis, Lab Tests, Observation, Record Keeping, Empathy, Communication",0–2 yrs,College,Medical
+Research Assistant,"Data Collection, Data Analysis, Literature Review, Report Writing, Fieldwork, Critical Thinking, Problem Solving",0–2 yrs,College,Research
+Civil Design Intern,"AutoCAD, STAAD Pro, Surveying, Project Planning, Drafting, Safety Protocols, Problem Solving, Reporting",0–2 yrs,College,Technical
+Game Developer,"Unity, C#, Game Logic, 3D Modelling, Physics, Animation, Problem Solving, Debugging, Collaboration",0–2 yrs,College,Technical
+Game Designer,"Game Logic, Unity, Storyboarding, Creativity, UI/UX, 3D Modelling, Problem Solving, Teamwork",0–2 yrs,College,Technical
+Social Media Intern,"Content Creation, Scheduling, Analytics, SEO, Creativity, Communication, Graphic Design Basics",0–2 yrs,College,Non-Technical
+Content Editor,"Proofreading, Editing, Grammar, Research, Writing, Attention to Detail, Communication",0–2 yrs,College,Non-Technical
+Finance Analyst,"Excel, Accounting Basics, Reporting, Analysis, Presentation, Bookkeeping, Critical Thinking",0–2 yrs,College,Finance
+Electrical Research Intern,"Circuit Design, MATLAB, Electronics Testing, Troubleshooting, Documentation, Research Methods, Problem Solving",0–2 yrs,College,Research
+Mechanical Research Intern,"CAD, SolidWorks, Thermodynamics, Experimental Design, Material Science, Problem Solving, Report Writing",0–2 yrs,College,Research
+AI/ML Research Intern,"Python, TensorFlow, Machine Learning, Deep Learning, Data Analysis, Model Evaluation, Research, Problem Solving",0–2 yrs,College,Research
+Chemical Lab Technician,"Lab Safety, Chemical Handling, Titration, Documentation, Sample Analysis, Problem Solving, Attention to Detail",0–2 yrs,College,Medical
+Graphic Design Intern,"Photoshop, Illustrator, Creativity, Branding, UI/UX, Layout Design, Typography, Communication",0–2 yrs,College,Non-Technical
+Animation Designer,"Adobe Animate, Storyboarding, Creativity, Blender Basics, 2D/3D Animation, Timing, Problem Solving",0–2 yrs,College,Non-Technical
+Digital Content Creator,"Video Editing, Canva, Social Media, Creativity, Communication, Basic SEO, Content Planning",0–2 yrs,College,Non-Technical
+Accounting Assistant,"Excel, Bookkeeping, Ledger Management, Accounting Principles, Attention to Detail, Reporting, Documentation",0–2 yrs,College,Finance
+Machine Learning Engineer,"Python, TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas, Data Cleaning, Feature Engineering, Model Deployment, Evaluation, Problem Solving",0–2 yrs,College,Technical
+NLP Engineer,"Python, NLTK, SpaCy, Transformers, Data Preprocessing, Text Analysis, Model Training, Evaluation, Problem Solving",0–2 yrs,College,Technical
+Data Scientist,"Python, R, SQL, Statistics, Pandas, NumPy, Machine Learning, Data Visualization, Tableau, Communication, Problem Solving",0–2 yrs,College,Technical
+Blockchain Developer,"Solidity, Ethereum, Smart Contracts, Web3.js, Cryptography, Python, Problem Solving, Git, Testing",0–2 yrs,College,Technical
+IoT Engineer,"Arduino, Raspberry Pi, Python, Sensors, Networking, Embedded Systems, Circuit Design, Data Analysis, Problem Solving",0–2 yrs,College,Technical
+Network Engineer,"Networking, Cisco, Firewall Configuration, Linux, Packet Tracing, Troubleshooting, Problem Solving, Communication",0–2 yrs,College,Technical
+Database Administrator,"SQL, Database Design, Backup & Recovery, Query Optimization, Security, Performance Tuning, Problem Solving",0–2 yrs,College,Technical
+Cloud Architect,"AWS, Azure, GCP, Kubernetes, Docker, Networking, Security, Scripting, DevOps, Problem Solving",0–2 yrs,College,Technical
+QA Engineer,"Manual Testing, Selenium, JIRA, Test Case Design, Bug Reporting, Communication, Problem Solving",0–2 yrs,College,Technical
+Mobile App Developer,"Java, Kotlin, Swift, React Native, Flutter, APIs, Git, Debugging, Problem Solving",0–2 yrs,College,Technical
+Embedded Systems Engineer,"C, C++, Microcontrollers, RTOS, Sensors, Actuators, Circuit Design, Problem Solving, Debugging",0–2 yrs,College,Technical
+Aerospace Engineer,"Aerodynamics, CAD, CFD, MATLAB, Simulation, Problem Solving, Teamwork, Report Writing",0–2 yrs,College,Aerospace
+Aeronautical Engineer,"Flight Dynamics, CAD, Aerodynamics, CFD, Simulation, MATLAB, Troubleshooting, Problem Solving",0–2 yrs,College,Aerospace
+Mechanical Design Engineer,"CAD, SolidWorks, AutoCAD, Material Knowledge, Manufacturing Processes, Problem Solving, MATLAB, Simulation",0–2 yrs,College,Mechanical
+Electrical Design Engineer,"Circuit Design, MATLAB, AutoCAD Electrical, Power Systems, Electronics Testing, Troubleshooting, Documentation",0–2 yrs,College,Electrical
+Renewable Energy Engineer,"Solar, Wind, Battery Storage, MATLAB, System Design, Data Analysis, Troubleshooting, Problem Solving",0–2 yrs,College,Electrical
+Civil Research Intern,"AutoCAD, STAAD Pro, Surveying, Structural Analysis, Experimental Design, Field Data Collection, Report Writing, Problem Solving",0–2 yrs,College,Research
+Mechanical Research Intern,"CAD, SolidWorks, Thermodynamics, Materials Testing, Data Analysis, Simulation, Report Writing, Problem Solving",0–2 yrs,College,Research
+Electrical Research Intern,"Circuit Design, MATLAB, Electronics Testing, Data Analysis, Simulation, Documentation, Problem Solving",0–2 yrs,College,Research
+Medical Research Intern,"Clinical Trials, Lab Testing, Data Analysis, Research Methodology, Report Writing, Observation, Critical Thinking",0–2 yrs,College,Medical
+Pharma Research Intern,"Lab Techniques, Drug Analysis, Safety Protocols, Data Recording, Literature Review, Experiment Design, Problem Solving",0–2 yrs,College,Medical
+Nurse Intern,"Patient Care, Vital Monitoring, Basic Clinical Procedures, Hygiene, Record Keeping, Communication, Empathy",Beginner,School,Medical
+Lab Technician,"Observation, Sample Handling, Experiment Documentation, Equipment Cleaning, Basic Lab Techniques, Attention to Detail",Beginner,School,Medical
+Agriculture Researcher,"Soil Science, Crop Analysis, Irrigation, Data Collection, Pest Management, Documentation, Observation, Problem Solving",0–2 yrs,College,Agriculture
+Horticulture Researcher,"Plant Biology, Soil Testing, Irrigation, Garden Maintenance, Pest Control, Data Collection, Reporting",0–2 yrs,College,Agriculture
+Veterinary Assistant,"Animal Care, Basic Diagnosis, Lab Tests, Observation, Record Keeping, Communication, Empathy",0–2 yrs,College,Medical
+Food Technology Intern,"Food Safety, Quality Control, Lab Techniques, Data Recording, Problem Solving, Observation, Documentation",0–2 yrs,College,Medical
+Biotechnology Intern,"PCR, Gel Electrophoresis, Lab Safety, Data Analysis, Experiment Design, Research Methods, Problem Solving",0–2 yrs,College,Medical
+Chemical Lab Intern,"Lab Safety, Titration, Chemical Handling, Sample Analysis, Data Recording, Problem Solving, Documentation",0–2 yrs,College,Medical
+Mechanical Technician,"CAD, SolidWorks, Fabrication, Machine Operation, Material Knowledge, Problem Solving, Teamwork",0–2 yrs,College,Mechanical
+Electrical Technician,"Circuit Design, Electronics Testing, Wiring, Troubleshooting, Safety Protocols, Documentation",0–2 yrs,College,Electrical
+Civil Technician,"AutoCAD, Surveying, Drafting, Project Planning, Safety, Reporting, Problem Solving",0–2 yrs,College,Civil
+Interior Designer,"AutoCAD, SketchUp, Creativity, Color Theory, Space Planning, Presentation, Communication",0–2 yrs,College,Non-Technical
+Fashion Designer,"Sketching, Textile Knowledge, CAD for Fashion, Creativity, Color Theory, Sewing, Trend Analysis",0–2 yrs,College,Non-Technical
+Graphic Designer,"Photoshop, Illustrator, Creativity, Branding, Typography, Layout Design, Communication",0–2 yrs,College,Non-Technical
+UI/UX Designer,"Figma, Wireframing, Prototyping, User Research, Usability Testing, Communication, Problem Solving",0–2 yrs,College,Non-Technical
+Digital Marketing Executive,"SEO, Google Analytics, Social Media Management, Content Creation, Email Marketing, Copywriting, Communication",0–2 yrs,College,Non-Technical
+Content Writer,"Creative Writing, Research, SEO, Proofreading, Editing, Communication, Storytelling, Time Management",0–2 yrs,College,Non-Technical
+Technical Writer,"Documentation, Research, Communication, MS Office, Problem Solving, Editing, Attention to Detail",0–2 yrs,College,Non-Technical
+Finance Analyst,"Accounting, Financial Modeling, Excel, Reporting, Corporate Finance, Valuation, Communication, Problem Solving",0–2 yrs,College,Finance
+Investment Banking Intern,"Financial Modeling, Excel, Market Analysis, Valuation, Corporate Finance, Reporting, Communication",0–2 yrs,College,Finance
+Accounting Assistant,"Excel, Bookkeeping, Ledger Management, Accounting Principles, Documentation, Attention to Detail",0–2 yrs,College,Finance
+HR Intern,"HR Policies, Recruitment Basics, Screening Resumes, Communication, MS Office, Employee Engagement",0–2 yrs,College,Non-Technical
+Event Management Intern,"Planning, Coordination, Communication, Vendor Management, Budgeting, Creativity, Teamwork",0–2 yrs,College,Non-Technical
+Social Media Intern,"Content Creation, Scheduling, Analytics, SEO, Creativity, Communication, Graphic Design Basics",0–2 yrs,College,Non-Technical
+Game Developer,"Unity, C#, Game Logic, 3D Modelling, Physics, Animation, Problem Solving, Debugging, Collaboration",0–2 yrs,College,Technical
+Game Designer,"Game Logic, Unity, Storyboarding, Creativity, UI/UX, 3D Modelling, Problem Solving, Teamwork",0–2 yrs,College,Technical
+Robotics Engineer,"Python, C++, ROS, Sensors, Actuators, Circuit Design, CAD, Simulation, Problem Solving",0–2 yrs,College,Technical
+Automation Engineer,"PLC, SCADA, Python, MATLAB, Circuit Design, Problem Solving, Troubleshooting",0–2 yrs,College,Technical
+Cloud DevOps Engineer,"AWS, Docker, Kubernetes, CI/CD, Terraform, Linux, Scripting, Problem Solving",0–2 yrs,College,Technical
+Cybersecurity Analyst,"Networking, Penetration Testing, Python, Ethical Hacking, Security Protocols, Incident Response",0–2 yrs,College,Technical
+Ethical Hacker,"Kali Linux, Python, Networking, Vulnerability Assessment, Pen Testing, Report Writing",0–2 yrs,College,Technical
+Web Developer,"HTML, CSS, JavaScript, React, Node.js, API Integration, Git, Problem Solving",0–2 yrs,College,Technical
+Frontend Developer,"HTML, CSS, JavaScript, React, UI/UX, Problem Solving, Git, Debugging",0–2 yrs,College,Technical
+Backend Developer,"Python, Node.js, Databases, API Development, Security, Testing, Git, Problem Solving",0–2 yrs,College,Technical
+Full Stack Developer,"Frontend + Backend Skills, Databases, API, Git, Debugging, Problem Solving",0–2 yrs,College,Technical
+AI Research Intern,"Python, TensorFlow, PyTorch, Data Analysis, Research Methodology, Paper Reading, Problem Solving",0–2 yrs,College,Research
+Cloud Security Engineer,"AWS, Azure, Linux, Networking, Security Policies, Encryption, Scripting, Compliance",0–2 yrs,College,Technical
+Renewable Energy Researcher,"Solar PV, Wind Turbine Design, MATLAB, Data Analysis, Simulation, Problem Solving",0–2 yrs,College,Electrical
+Structural Engineer,"AutoCAD, STAAD Pro, Structural Analysis, Material Knowledge, Safety Standards, Report Writing",0–2 yrs,College,Civil
+Construction Manager,"Project Management, Planning, Safety, Budgeting, Team Coordination, AutoCAD",0–2 yrs,College,Civil
+Environmental Scientist,"Data Analysis, GIS, Environmental Sampling, Report Writing, Observation, Research Methods",0–2 yrs,College,Research
+Oceanography Intern,"Marine Biology, Data Collection, MATLAB, Sampling, GIS, Observation, Reporting",0–2 yrs,College,Research
+Meteorology Intern,"Weather Data Analysis, GIS, MATLAB, Observation, Reporting, Research Methods",0–2 yrs,College,Research
+AI Product Manager,"AI Concepts, Python Basics, Product Management, Communication, Requirement Gathering, Documentation",0–2 yrs,College,Non-Technical
+Business Analyst,"Excel, SQL, Requirement Gathering, Documentation, Communication, Analytical Thinking",0–2 yrs,College,Finance/Non-Tech
+Market Research Analyst,"Data Analysis, Excel, Surveys, Report Writing, Statistics, Communication",0–2 yrs,College,Finance/Non-Tech
+Biostatistician,"R, Statistics, Data Analysis, Excel, Reporting, Research Methods, Communication",0–2 yrs,College,Medical/Research
+Clinical Research Coordinator,"Patient Interaction, Data Entry, Clinical Trial Protocols, Observation, Reporting",0–2 yrs,College,Medical
+Medical Lab Intern,"Sample Testing, Lab Equipment Handling, Documentation, Observation, Data Analysis",0–2 yrs,College,Medical
+Pharmacy Assistant,"Drug Knowledge, Stock Management, Customer Communication, Documentation",0–2 yrs,College,Medical
+Telemedicine Assistant,"Communication, Patient Interaction, Medical Terminology, Data Entry, Observation",0–2 yrs,College,Medical
+Dietician Intern,"Nutrition Knowledge, Patient Assessment, Communication, Excel, Report Writing",0–2 yrs,College,Medical
+Nutrition Assistant,"Food Analysis, Patient Counseling, Communication, Observation, Reporting",0–2 yrs,College,Medical
+Physiotherapy Intern,"Anatomy Knowledge, Exercises, Patient Assistance, Communication, Observation",0–2 yrs,College,Medical
+Sports Science Intern,"Exercise Physiology, Fitness Assessment, Data Collection, Reporting, Communication",0–2 yrs,College,Medical
+Chemical Engineer,"Process Design, MATLAB, Safety Protocols, Experimentation, Data Analysis, Problem Solving",0–2 yrs,College,Chemical
+Environmental Engineer,"Waste Management, Water Treatment, MATLAB, Data Analysis, Report Writing",0–2 yrs,College,Civil/Environmental
+Agricultural Technician,"Crop Monitoring, Soil Testing, Irrigation Systems, Data Recording, Reporting",0–2 yrs,College,Agriculture
+Agrochemical Researcher,"Chemistry, Soil Analysis, Crop Testing, Data Analysis, Reporting",0–2 yrs,College,Agriculture
+Dairy Farm Intern,"Animal Care, Milk Testing, Hygiene, Record Keeping, Observation",0–2 yrs,College,Agriculture
+Veterinary Intern,"Animal Care, Diagnostics, Lab Techniques, Data Recording, Observation",0–2 yrs,College,Agriculture/Medical
+Horticulture Assistant,"Plant Care, Soil Testing, Pest Management, Reporting, Observation",0–2 yrs,College,Agriculture
+Botany Research Intern,"Plant Biology, Lab Techniques, Field Data Collection, Report Writing",0–2 yrs,College,Research/Agriculture
+Astronomy Research Intern,"Telescope Handling, Data Collection, MATLAB, Data Analysis, Observation",0–2 yrs,College,Research/Aerospace
+Astrophysics Intern,"Data Analysis, Python, Research Papers, Observation, Simulation",0–2 yrs,College,Research/Aerospace
+Space Science Intern,"Satellite Data Analysis, MATLAB, Physics, Research Methods, Reporting",0–2 yrs,College,Research/Aerospace
+GIS Analyst,"ArcGIS, QGIS, Data Analysis, Mapping, Reporting, Communication",0–2 yrs,College,Technical
+Remote Sensing Intern,"GIS, Image Processing, MATLAB, Data Analysis, Report Writing",0–2 yrs,College,Technical
+Urban Planning Intern,"AutoCAD, GIS, Data Analysis, Planning Principles, Reporting, Communication",0–2 yrs,College,Civil/Non-Tech
+Interior Architecture Intern,"CAD, Design Principles, Creativity, Visualization, Documentation, Presentation",0–2 yrs,College,Non-Technical
+Journalism Intern,"Writing, Editing, Reporting, Research, Photography, Communication, Storytelling",0–2 yrs,College,Non-Technical
+Public Relations Intern,"Communication, Event Management, Social Media, Writing, Coordination, Creativity",0–2 yrs,College,Non-Technical
+NGO Intern,"Social Work, Data Collection, Communication, Documentation, Awareness Programs",0–2 yrs,College,Non-Technical
+Psychology Intern,"Research, Observation, Data Analysis, Reporting, Communication, Counseling Basics",0–2 yrs,College,Non-Technical
+Teaching Assistant,"Subject Knowledge, Communication, Classroom Assistance, Report Writing, Patience",0–2 yrs,College,Non-Technical
+Junior Web Developer,"HTML, CSS, JavaScript, Basic Git, Debugging, Problem Solving",0–2 yrs,College,Technical
+Junior App Developer,"Java, Kotlin, Android Studio, Git, Debugging, Problem Solving",0–2 yrs,College,Technical
+IT Support Intern,"Windows/Linux, Troubleshooting, Networking Basics, Communication, Ticketing",0–2 yrs,College,Technical
+Data Entry Assistant,"Excel, Typing, Attention to Detail, Basic Database Knowledge",0–2 yrs,College,Non-Technical
+Social Media Intern,"Content Creation, Canva, Communication, Scheduling, Basic Analytics",0–2 yrs,College,Non-Technical
+Content Writer Intern,"Writing, Research, Grammar, Creativity, SEO Basics",0–2 yrs,College,Non-Technical
+Graphic Design Intern,"Photoshop, Illustrator, Creativity, Typography, Layout Design",0–2 yrs,College,Non-Technical
+Video Editing Intern,"Premiere Pro, After Effects, Creativity, Storytelling, Audio Editing",0–2 yrs,College,Non-Technical
+Animation Intern,"Blender, Maya, 3D Modeling, Storyboarding, Creativity",0–2 yrs,College,Technical/Creative
+Game Developer Intern,"Unity, C#, 3D Modeling, Logic, Problem Solving, Git",0–2 yrs,College,Technical
+Blockchain Intern,"Solidity, Ethereum, Smart Contracts, Git, Problem Solving",0–2 yrs,College,Technical
+IoT Developer,"Arduino, Raspberry Pi, Sensors, Python, Networking, Data Logging",0–2 yrs,College,Technical
+Hardware Engineer,"Circuit Design, PCB, Microcontrollers, Soldering, Testing",0–2 yrs,College,Technical
+Embedded Systems Intern,"C/C++, Microcontrollers, Sensors, RTOS Basics, Debugging",0–2 yrs,College,Technical
+Mechanical Design Intern,"CAD, SolidWorks, Material Knowledge, Stress Analysis, Problem Solving",0–2 yrs,College,Mechanical
+Electrical Design Intern,"Circuit Design, MATLAB, AutoCAD Electrical, Testing, Simulation",0–2 yrs,College,Electrical
+Electronics Lab Intern,"Soldering, Circuit Testing, Multimeter Usage, Problem Solving",0–2 yrs,College,Electrical
+Renewable Energy Intern,"Solar Panel Basics, Wind Turbine Basics, MATLAB, Data Collection",0–2 yrs,College,Electrical/Renewable
+QA Tester Intern,"Manual Testing, Bug Reporting, Test Cases, Communication, Attention to Detail",0–2 yrs,College,Technical
+Mobile App QA,"Manual Testing, Test Plans, Documentation, Communication, Android/iOS Basics",0–2 yrs,College,Technical
+AI/ML Intern,"Python, TensorFlow, Scikit-learn, Data Analysis, Algorithms",0–2 yrs,College,Technical
+Data Analyst Intern,"Excel, Python, SQL, Tableau, Data Visualization, Reporting",0–2 yrs,College,Finance/Technical
+Financial Analyst Intern,"Excel, Accounting Basics, Finance Knowledge, Data Analysis, Reporting",0–2 yrs,College,Finance
+Accounting Intern,"Excel, Tally, Accounting Principles, Reporting, Attention to Detail",0–2 yrs,College,Finance
+Banking Intern,"Communication, Excel, Financial Literacy, Data Entry, Customer Service",0–2 yrs,College,Finance
+Economics Research Intern,"Data Analysis, Excel, R, Research Methods, Reporting",0–2 yrs,College,Finance/Research
+Stock Market Intern,"Excel, Trading Platforms, Financial Analysis, Data Interpretation",0–2 yrs,College,Finance
+Insurance Intern,"Communication, Excel, Insurance Knowledge, Data Entry, Reporting",0–2 yrs,College,Finance
+Agricultural Research Intern,"Crop Study, Data Collection, Soil Testing, Reporting, Observation",0–2 yrs,College,Agriculture
+Food Technology Intern,"Food Analysis, Lab Testing, Data Collection, Reporting",0–2 yrs,College,Agriculture/Medical
+Veterinary Research Intern,"Animal Health, Lab Techniques, Data Analysis, Reporting",0–2 yrs,College,Medical/Agriculture
+Bioinformatics Intern,"Python, R, Data Analysis, Genomics, Research Methods",0–2 yrs,College,Research/Medical
+Chemistry Lab Intern,"Lab Techniques, Safety, Data Recording, Analysis, Reporting",0–2 yrs,College,Chemical/Research
+Physics Lab Intern,"Experimentation, Data Recording, MATLAB, Analysis, Reporting",0–2 yrs,College,Research
+Math Research Intern,"Statistics, Excel, R, Problem Solving, Reporting",0–2 yrs,College,Research
+Psychology Research Intern,"Research Methods, Observation, Data Analysis, Reporting",0–2 yrs,College,Research
+Sociology Intern,"Surveys, Data Analysis, Report Writing, Observation",0–2 yrs,College,Research
+School Coding Intern,"Scratch, Python Basics, Logical Thinking, Problem Solving",0–2 yrs,School,Technical
+Science Project Intern,"Basic Experiments, Observation, Reporting, Safety",0–2 yrs,School,Research
+Math Tutor Intern,"Mathematics Knowledge, Communication, Teaching Skills, Patience",0–2 yrs,School,Non-Technical
+Art & Craft Intern,"Drawing, Painting, Creativity, Attention to Detail",0–2 yrs,School,Non-Technical
+Creative Writing Intern,"Writing, Grammar, Creativity, Storytelling, Communication",0–2 yrs,School,Non-Technical
+Robotics for Kids,"LEGO Mindstorms, Sensors, Logic, Problem Solving, Creativity",0–2 yrs,School,Technical
+Animation for Kids,"Basic 2D/3D Animation, Creativity, Storyboarding",0–2 yrs,School,Creative/Technical
+Environmental Club Intern,"Awareness Programs, Reporting, Data Collection, Teamwork",0–2 yrs,School,Non-Technical
+School Astronomy Intern,"Observation, Telescope Basics, Data Recording, Reporting",0–2 yrs,School,Research
+School Biology Intern,"Plant/Animal Study, Data Collection, Observation, Reporting",0–2 yrs,School,Research/Medical
+School Chemistry Intern,"Simple Lab Experiments, Safety, Observation, Data Recording",0–2 yrs,School,Research
+School Physics Intern,"Experiments, Observation, Data Recording, Reporting",0–2 yrs,School,Research
+School Coding & Robotics,"Scratch, Arduino Basics, Logic, Creativity, Problem Solving",0–2 yrs,School,Technical
+Mechanical Design Engineer,"CAD, SolidWorks, AutoCAD, Material Science, Stress Analysis, Problem Solving",0–2 yrs,College,Mechanical
+Automotive Intern,"Vehicle Mechanics, CAD, Diagnostics, Data Collection, Problem Solving",0–2 yrs,College,Mechanical
+Aerospace Engineering Intern,"Aerodynamics, CAD, MATLAB, Simulation, Propulsion Basics",0–2 yrs,College,Aerospace
+Aeronautical Design Intern,"Aerodynamics, CAD, Flight Mechanics, Simulation, Problem Solving",0–2 yrs,College,Aeronautical
+Avionics Intern,"Embedded Systems, Circuit Design, Sensors, MATLAB, Problem Solving",0–2 yrs,College,Aeronautical/Electrical
+Electrical Power Intern,"Circuit Analysis, MATLAB, Power Systems, Simulation, Testing",0–2 yrs,College,Electrical
+Control Systems Intern,"MATLAB, Simulink, PID Control, Sensors, Problem Solving",0–2 yrs,College,Electrical/Mechanical
+Instrumentation Intern,"Sensors, Measurement Systems, Calibration, Data Logging, Analysis",0–2 yrs,College,Electrical/Research
+Biomedical Intern,"Anatomy Basics, Lab Techniques, Data Analysis, Reporting",0–2 yrs,College,Medical
+Medical Lab Intern,"Lab Testing, Sample Collection, Data Recording, Reporting, Safety",0–2 yrs,College,Medical
+Pharmacy Intern,"Drug Knowledge, Lab Techniques, Data Entry, Reporting",0–2 yrs,College,Medical
+Nursing Intern,"Patient Care, Monitoring, Communication, Documentation",0–2 yrs,College,Medical
+Dietician Intern,"Nutrition Knowledge, Data Analysis, Reporting, Communication",0–2 yrs,College,Medical
+Hospital Admin Intern,"Communication, Scheduling, Record Keeping, Coordination",0–2 yrs,College,Non-Technical/Medical
+Clinical Research Intern,"Research Methods, Data Analysis, Lab Skills, Documentation",0–2 yrs,College,Medical/Research
+Biotech Intern,"Lab Techniques, Data Analysis, Research Methods, Reporting",0–2 yrs,College,Research/Medical
+Genetic Research Intern,"DNA Analysis, Lab Techniques, Data Recording, Bioinformatics Basics",0–2 yrs,College,Research/Medical
+Renewable Energy Research,"Solar, Wind Basics, MATLAB, Data Analysis, Reporting",0–2 yrs,College,Electrical/Renewable
+Robotics Research Intern,"Arduino, Sensors, Python/C++, Data Logging, Problem Solving",0–2 yrs,College,Technical
+AI Research Intern,"Python, TensorFlow, Scikit-learn, Data Analysis, Research",0–2 yrs,College,Technical/Research
+Machine Learning Intern,"Python, Data Analysis, Regression, Classification, Algorithms",0–2 yrs,College,Technical
+Data Science Intern,"Python, R, SQL, Tableau, Data Cleaning, Analysis",0–2 yrs,College,Technical/Finance
+Software QA Intern,"Manual Testing, Test Cases, Bug Tracking, Reporting",0–2 yrs,College,Technical
+Cloud Computing Intern,"AWS Basics, Python, Networking, Virtual Machines, Problem Solving",0–2 yrs,College,Technical
+Cybersecurity Intern,"Networking, Python, Security Basics, Vulnerability Analysis",0–2 yrs,College,Technical
+Ethical Hacking Intern,"Kali Linux, Networking, Pen Testing, Scripting Basics",0–2 yrs,College,Technical
+IoT Research Intern,"Raspberry Pi, Arduino, Sensors, Python, Data Logging",0–2 yrs,College,Technical
+VR/AR Intern,"Unity, 3D Modeling, C#, Problem Solving, Creativity",0–2 yrs,College,Technical/Creative
+Game Design Intern,"Unity, C#, Storyboarding, Logic, Creativity",0–2 yrs,College,Technical/Creative
+School Robotics Intern,"LEGO, Sensors, Logical Thinking, Problem Solving",0–2 yrs,School,Technical
+School Astronomy Club,"Observation, Telescope Basics, Data Recording, Reporting",0–2 yrs,School,Research
+School Science Project,"Experimentation, Observation, Data Recording, Reporting",0–2 yrs,School,Research
+School Physics Intern,"Simple Experiments, Measurement, Data Analysis, Observation",0–2 yrs,School,Research
+School Chemistry Intern,"Lab Safety, Simple Experiments, Observation, Reporting",0–2 yrs,School,Research
+School Biology Intern,"Plant/Animal Study, Observation, Data Collection",0–2 yrs,School,Research
+School Math & Coding,"Scratch, Python Basics, Logical Thinking, Problem Solving",0–2 yrs,School,Technical
+School Art & Creativity,"Drawing, Painting, Craft, Creativity, Attention to Detail",0–2 yrs,School,Non-Technical
+School Writing Club,"Storytelling, Grammar, Creativity, Communication",0–2 yrs,School,Non-Technical
+School Environmental Intern,"Awareness Programs, Data Collection, Reporting, Teamwork",0–2 yrs,School,Non-Technical
+School Robotics & Coding,"Arduino Basics, Logic, Problem Solving, Creativity",0–2 yrs,School,Technical
+School AI/ML Intro,"Python Basics, Logical Thinking, Problem Solving",0–2 yrs,School,Technical
+School Astronomy Intern,"Observation, Telescopes, Recording, Reporting",0–2 yrs,School,Research
+School Engineering Club,"Building Models, Simple Mechanics, Creativity, Problem Solving",0–2 yrs,School,Technical
+School Math & Logic,"Puzzles, Problem Solving, Analytical Thinking",0–2 yrs,School,Non-Technical
+School Science Fair Intern,"Experiments, Observation, Reporting, Presentation",0–2 yrs,School,Research
+Agriculture Research Intern,"Crop Study, Soil Analysis, Reporting, Data Collection",0–2 yrs,College,Agriculture
+Farm Management Intern,"Irrigation Basics, Crop Management, Data Recording",0–2 yrs,College,Agriculture
+Agricultural Tech Intern,"Sensors, IoT Basics, Data Collection, Reporting",0–2 yrs,College,Agriculture/Technical
+Agri-Business Intern,"Excel, Reporting, Market Analysis, Data Collection",0–2 yrs,College,Agriculture/Finance
+Finance Intern,"Excel, Accounting Basics, Data Analysis, Financial Modelling",0–2 yrs,College,Finance
+Accounting Assistant,"Bookkeeping, Excel, Accounting Principles, Data Entry",0–2 yrs,College,Finance
+Banking Intern,"Customer Service, Finance Basics, Data Handling",0–2 yrs,College,Finance
+Investment Research Intern,"Excel, Python, Financial Analysis, Reporting",0–2 yrs,College,Finance
+Risk Management Intern,"Data Analysis, Excel, Reporting, Problem Solving",0–2 yrs,College,Finance
+Insurance Intern,"Customer Handling, Excel, Reporting, Data Analysis",0–2 yrs,College,Finance
+Financial Modelling Intern,"Excel, Python, Analytics, Forecasting, Reporting",0–2 yrs,College,Finance
+Stock Market Research Intern,"Excel, Data Analysis, Market Research, Reporting",0–2 yrs,College,Finance
+Economics Research Intern,"Data Collection, Analysis, Excel, Reporting",0–2 yrs,College,Finance/Research
+Marketing Intern,"Market Research, MS Office, Communication, Creativity",0–2 yrs,College,Non-Technical
+Digital Marketing Intern,"Social Media, SEO, Content Writing, Analytics",0–2 yrs,College,Non-Technical/Technical
+Content Writer,"Writing Skills, Creativity, Grammar, Research",0–2 yrs,College,Non-Technical
+Graphic Design Intern,"Photoshop, Illustrator, Creativity, Layout Design",0–2 yrs,College,Non-Technical/Creative
+UI/UX Intern,"Figma, Adobe XD, Design Thinking, Wireframing",0–2 yrs,College,Technical/Creative
+Video Editing Intern,"Premiere Pro, Creativity, Storytelling, Editing Skills",0–2 yrs,College,Non-Technical/Creative
+HR Intern,"Communication, Coordination, Excel, Data Entry",0–2 yrs,College,Non-Technical
+Admin Intern,"Excel, Communication, Scheduling, Coordination",0–2 yrs,College,Non-Technical
+School Finance Club Intern,"Excel Basics, Data Recording, Analytical Thinking",0–2 yrs,School,Finance
+School STEM Club Intern,"Basic Coding, Logical Thinking, Problem Solving",0–2 yrs,School,Technical
+School AI/ML Intro,"Scratch, Python Basics, Logical Thinking",0–2 yrs,School,Technical
+School Coding Club Intern,"Scratch, Python Basics, Problem Solving",0–2 yrs,School,Technical
+School Robotics Club,"Arduino Basics, Sensors, Creativity, Problem Solving",0–2 yrs,School,Technical
+School Math & Logic,"Puzzles, Problem Solving, Analytical Thinking",0–2 yrs,School,Non-Technical
+School Science Fair Intern,"Experimentation, Observation, Reporting, Presentation",0–2 yrs,School,Research
+School Environmental Intern,"Data Collection, Awareness Programs, Teamwork",0–2 yrs,School,Non-Technical
+School Astronomy Club,"Observation, Telescope Basics, Data Recording",0–2 yrs,School,Research
+School Chemistry Club,"Lab Safety, Simple Experiments, Data Collection",0–2 yrs,School,Research
+School Biology Club,"Plant/Animal Study, Observation, Data Collection",0–2 yrs,School,Research
+School Physics Club,"Simple Experiments, Measurement, Observation",0–2 yrs,School,Research
+Agriculture Research Intern,"Crop Study, Soil Analysis, Data Collection, Reporting",0–2 yrs,College,Agriculture
+Farm Management Intern,"Irrigation Basics, Crop Management, Data Logging",0–2 yrs,College,Agriculture
+Agricultural Tech Intern,"IoT Basics, Sensors, Data Analysis, Reporting",0–2 yrs,College,Agriculture/Technical
+Agri-Business Intern,"Excel, Market Analysis, Reporting, Data Collection",0–2 yrs,College,Agriculture/Finance
+Medical Lab Intern,"Lab Testing, Sample Collection, Reporting, Data Entry",0–2 yrs,College,Medical
+Biomedical Intern,"Lab Techniques, Data Analysis, Reporting, Documentation",0–2 yrs,College,Medical
+Clinical Research Intern,"Research Methods, Data Analysis, Lab Skills, Documentation",0–2 yrs,College,Medical/Research
+Hospital Admin Intern,"Scheduling, Communication, Record Keeping, Coordination",0–2 yrs,College,Non-Technical/Medical
+Nursing Intern,"Patient Care, Monitoring, Communication, Documentation",0–2 yrs,College,Medical
+Pharmacy Intern,"Drug Knowledge, Lab Techniques, Reporting, Documentation",0–2 yrs,College,Medical
+Dietician Intern,"Nutrition Knowledge, Data Analysis, Reporting, Communication",0–2 yrs,College,Medical
+School Medical Club Intern,"First Aid, Basic Health Knowledge, Awareness, Reporting",0–2 yrs,School,Medical
+School STEM Research,"Coding Basics, Logical Thinking, Problem Solving",0–2 yrs,School,Technical
+School Mechanical Club,"Model Making, CAD Basics, Creativity, Problem Solving",0–2 yrs,School,Mechanical
+School Electrical Club,"Circuit Basics, Arduino, Logical Thinking, Problem Solving",0–2 yrs,School,Electrical
+School Aerospace Club,"Rocket Basics, Simple Aerodynamics, Observation",0–2 yrs,School,Aerospace
+School Aeronautical Club,"Flight Basics, Model Planes, Creativity, Observation",0–2 yrs,School,Aeronautical
+School Robotics & Coding,"Arduino Basics, Sensors, Logical Thinking, Problem Solving",0–2 yrs,School,Technical
+School AI/ML Club,"Python Basics, Logical Thinking, Problem Solving",0–2 yrs,School,Technical
+Renewable Energy Intern,"Solar, Wind, MATLAB, Data Analysis, Reporting",0–2 yrs,College,Electrical/Renewable
+Renewable Energy Research,"Solar, Wind, Energy Modelling, MATLAB, Reporting",0–2 yrs,College,Electrical/Renewable
+Robotics Research Intern,"Arduino, Sensors, Python/C++, Data Logging, Problem Solving",0–2 yrs,College,Technical
+AI Research Intern,"Python, TensorFlow, Scikit-learn, Data Analysis, Research",0–2 yrs,College,Technical/Research
+Machine Learning Intern,"Python, Data Analysis, Regression, Classification, Algorithms",0–2 yrs,College,Technical
+Environmental Data Analyst Intern,"Data Analysis, GIS Basics, Excel, Reporting, Research",College,Research/Environment,
+School Creative Arts Intern,"Drawing, Creativity, Storytelling, Presentation, Teamwork",School,Creative/Non-Technical,
