@@ -60,7 +60,7 @@ export default function Dashboard() {
           {/* Greeting Info */}
           <div>
             <h2 className="text-2xl font-bold text-gray-800">
-              Hello, {username}! 👋
+              Hello, {username}! 
             </h2>
             <p className="text-gray-700 mt-2">
               ABC ID: <span className="font-semibold">{abcId}</span>

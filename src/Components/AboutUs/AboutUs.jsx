@@ -240,31 +240,7 @@ const AboutUs = () => {
         </div>
 
         {/* Contact */}
-        <div className="bg-blue-50 p-8 rounded-lg">
-          <h3 className="text-xl font-semibold text-[#2c5aa0] mb-4">
-            Ministry of Education
-          </h3>
-          <p>
-            <strong>Address:</strong> Shastri Bhawan, Dr. Rajendra Prasad Road,
-            New Delhi - 110001
-          </p>
-          <p>
-            <strong>Phone:</strong> +91-11-23382698, 23381355
-          </p>
-          <p>
-            <strong>Email:</strong> webmaster.moe@gov.in
-          </p>
-          <p>
-            <strong>Website:</strong> www.education.gov.in
-          </p>
-          <br />
-          <p>
-            <strong>Office Hours:</strong> Mon–Fri, 9:00 AM to 5:30 PM
-          </p>
-          <p>
-            <strong>Public Grievance:</strong> pgportal.gov.in
-          </p>
-        </div>
+       
       </div>
     </GovernmentLayout>
   );

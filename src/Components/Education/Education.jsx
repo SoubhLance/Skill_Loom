@@ -237,32 +237,7 @@ const Education = () => {
         </div>
 
         {/* Contact */}
-        <div className="bg-blue-100 p-6 rounded-lg">
-          <h3 className="text-xl font-semibold text-[#2c5aa0] mb-4">
-            Ministry of Education
-          </h3>
-          <p>
-            <strong>Address:</strong> Shastri Bhawan, Dr. Rajendra Prasad Road,
-            New Delhi - 110001
-          </p>
-          <p>
-            <strong>Education Helpline:</strong> 1800-11-3737
-          </p>
-          <p>
-            <strong>Email:</strong> webmaster.moe@gov.in
-          </p>
-          <p>
-            <strong>Website:</strong> www.education.gov.in
-          </p>
-          <br />
-          <p>
-            <strong>AICTE:</strong> Nelson Mandela Marg, Vasant Kunj, New Delhi
-            - 110070
-          </p>
-          <p>
-            <strong>UGC:</strong> Bahadur Shah Zafar Marg, New Delhi - 110002
-          </p>
-        </div>
+        
       </div>
     </GovernmentLayout>
   );

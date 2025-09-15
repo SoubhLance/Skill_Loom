@@ -11,6 +11,11 @@ import ResumeUpload from "./Profile/ResumeUpload/ResumeUpload.jsx";
 import ProfileForm from "./Profile/ProfileForm/ProfileForm.jsx";
 import Dashboard from "./Profile/Dashboard/Dashboard.jsx";
 import ProfilePage from "./Profile/ProfilePage/ProfilePage.jsx";
+import Internships from "./Profile/Internships/Internships.jsx";
+import ResumeAnalysis from "./Profile/ResumeAnalysis/ResumeAnalysis.jsx";
+import Doculoom from "./Profile/Doculoom/Doculoom.jsx";
+import SkillAssessment from "./Profile/SkillAssessment/SkillAssessment.jsx";
+import MyInternships from "./Profile/MyInternships/MyInternships.jsx";
 
 import "./index.css";
 
@@ -27,7 +32,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/resume-analytics" element={<h1>Resume Analytics Page</h1>} />
       <Route path="/profile" element={<ProfilePage />} />
-
+      <Route path="/internships" element={<Internships />} />
+      <Route path="/resume-analysis" element={<ResumeAnalysis  />} />
+      <Route path="/doculoom" element={<Doculoom />} />
+      <Route path="/skill-assessment" element={<SkillAssessment />} />
+      <Route path="/my-internships" element={<MyInternships />} />
+      
     </Routes>
   </BrowserRouter>
 );

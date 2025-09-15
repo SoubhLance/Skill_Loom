@@ -23,7 +23,7 @@ const InternshipGuidelines = () => {
             The All India Council for Technical Education (AICTE) has mandated internship programs for all undergraduate technical programs to bridge the gap between academic learning and industry requirements.
           </p>
           <h3 className="text-xl font-semibold text-blue-600 mt-6 mb-2">Mandatory Requirements</h3>
-          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2">
+          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2 list-disc list-inside">
             <li>Minimum 8 weeks internship for all Engineering & Technology programs</li>
             <li>4-6 weeks internship for Management & Applied Arts programs</li>
             <li>Industry mentorship with designated supervisors</li>
@@ -47,7 +47,7 @@ const InternshipGuidelines = () => {
             Implementation Guidelines
           </h2>
           <h3 className="text-xl font-semibold text-blue-600 mt-4 mb-2">For Educational Institutions</h3>
-          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2">
+          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2 list-disc list-inside">
             <li>Establish Industry Liaison Cells for internship coordination</li>
             <li>Develop MoUs with industry partners and organizations</li>
             <li>Create internship databases and tracking systems</li>
@@ -58,7 +58,7 @@ const InternshipGuidelines = () => {
           </ul>
 
           <h3 className="text-xl font-semibold text-blue-600 mt-6 mb-2">For Industry Partners</h3>
-          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2">
+          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2 list-disc list-inside">
             <li>Provide structured learning experiences aligned with curriculum</li>
             <li>Assign experienced mentors for intern guidance</li>
             <li>Offer hands-on exposure to real-world projects</li>
@@ -75,7 +75,7 @@ const InternshipGuidelines = () => {
             Quality Assurance Framework
           </h2>
           <h3 className="text-xl font-semibold text-blue-600 mt-4 mb-2">Learning Outcomes</h3>
-          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2">
+          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2 list-disc list-inside">
             <li>Practical application of theoretical knowledge</li>
             <li>Development of professional and soft skills</li>
             <li>Understanding of industry practices and standards</li>
@@ -86,7 +86,7 @@ const InternshipGuidelines = () => {
           </ul>
 
           <h3 className="text-xl font-semibold text-blue-600 mt-6 mb-2">Assessment Criteria</h3>
-          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2">
+          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2 list-disc list-inside">
             <li>Industry supervisor evaluation (40%)</li>
             <li>Academic supervisor assessment (30%)</li>
             <li>Internship report and documentation (20%)</li>
@@ -102,7 +102,7 @@ const InternshipGuidelines = () => {
             Student Guidelines
           </h2>
           <h3 className="text-xl font-semibold text-blue-600 mt-4 mb-2">Preparation Phase</h3>
-          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2">
+          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2 list-disc list-inside">
             <li>Complete prerequisite courses and maintain minimum CGPA</li>
             <li>Participate in pre-internship training programs</li>
             <li>Prepare professional resume and portfolio</li>
@@ -112,7 +112,7 @@ const InternshipGuidelines = () => {
           </ul>
 
           <h3 className="text-xl font-semibold text-blue-600 mt-6 mb-2">During Internship</h3>
-          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2">
+          <ul className="bg-gray-100 p-5 border-l-4 border-blue-500 space-y-2 list-disc list-inside">
             <li>Maintain regular attendance and punctuality</li>
             <li>Follow organizational policies and code of conduct</li>
             <li>Actively participate in assigned projects and tasks</li>
@@ -132,15 +132,6 @@ const InternshipGuidelines = () => {
             <a href="#" className="bg-gradient-to-r from-blue-700 to-blue-500 text-white px-6 py-3 rounded-md shadow hover:scale-105 transform transition">Assessment Framework</a>
             <a href="#" className="bg-gradient-to-r from-blue-700 to-blue-500 text-white px-6 py-3 rounded-md shadow hover:scale-105 transform transition">Student Handbook</a>
           </div>
-        </section>
-
-        {/* Contact */}
-        <section className="bg-blue-100 p-6 rounded-lg">
-          <h3 className="text-xl font-semibold text-blue-700 mb-4">Contact Information</h3>
-          <p><strong>AICTE Headquarters:</strong> Nelson Mandela Marg, Vasant Kunj, New Delhi - 110070</p>
-          <p><strong>Email:</strong> internship@aicte-india.org</p>
-          <p><strong>Helpline:</strong> 1800-120-4360</p>
-          <p><strong>Website:</strong> www.aicte-india.org</p>
         </section>
       </div>
     </GovernmentLayout>

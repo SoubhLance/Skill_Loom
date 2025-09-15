@@ -21,14 +21,34 @@ export default function ProfileForm() {
     aadharNumber: "", // This is the ABC ID
     skills: "",
     interest: "",
-    profilePhoto: null, // New field for profile photo
+    profilePhoto: null,
   });
 
+  const [skillsList, setSkillsList] = useState([]);
+
+  // Handle general input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
+    }));
+  };
+
+  // Handle ABC ID constraints
+  const handleAbcIdChange = (e) => {
+    let value = e.target.value.toUpperCase();
+
+    if (!value.startsWith("ABC")) {
+      value = "ABC" + value.replace(/[^0-9]/g, "");
+    }
+
+    value = value.replace(/[^A-Z0-9]/g, ""); // only letters+numbers
+    if (value.length > 10) value = value.slice(0, 10); // ABC + 7 digits max
+
+    setFormData((prev) => ({
+      ...prev,
+      aadharNumber: value,
     }));
   };
 
@@ -40,11 +60,38 @@ export default function ProfileForm() {
       reader.onloadend = () => {
         setFormData((prev) => ({
           ...prev,
-          profilePhoto: reader.result, // Base64 string
+          profilePhoto: reader.result,
         }));
       };
       reader.readAsDataURL(file);
     }
+  };
+
+  // Handle adding skills
+  const handleSkillKeyDown = (e) => {
+    if (e.key === "Enter" || e.key === ",") {
+      e.preventDefault();
+      const newSkill = e.target.value.trim();
+      if (newSkill && !skillsList.includes(newSkill)) {
+        const updated = [...skillsList, newSkill];
+        setSkillsList(updated);
+        setFormData((prev) => ({
+          ...prev,
+          skills: updated.join(","),
+        }));
+      }
+      e.target.value = "";
+    }
+  };
+
+  // Remove a skill
+  const removeSkill = (skillToRemove) => {
+    const updated = skillsList.filter((skill) => skill !== skillToRemove);
+    setSkillsList(updated);
+    setFormData((prev) => ({
+      ...prev,
+      skills: updated.join(","),
+    }));
   };
 
   const sendEmailOTP = () => {
@@ -64,9 +111,7 @@ export default function ProfileForm() {
   };
 
   const handleSubmit = () => {
-    // Check if all fields are filled
     for (let key in formData) {
-      // allow profilePhoto to be optional if you want — currently required per original logic
       if (
         formData[key] === null ||
         formData[key] === undefined ||
@@ -77,14 +122,12 @@ export default function ProfileForm() {
       }
     }
 
-    // Save important details to localStorage for Dashboard
     localStorage.setItem("fullName", formData.fullName);
     localStorage.setItem("abcId", formData.aadharNumber);
-    localStorage.setItem("email", formData.email);              // <- save email
-    localStorage.setItem("phoneNumber", formData.phoneNumber);  // <- save phone
-    localStorage.setItem("skills", formData.skills || "N/A");   // <- save skills
+    localStorage.setItem("email", formData.email);
+    localStorage.setItem("phoneNumber", formData.phoneNumber);
+    localStorage.setItem("skills", formData.skills || "N/A");
 
-    // generate a SkillLoom ID if not present (keeps consistent with ProfilePage expectation)
     const skillloomId =
       localStorage.getItem("skillloomId") ||
       (formData.rollNumber ? `SL${formData.rollNumber}` : `SL${Date.now()}`);
@@ -94,9 +137,8 @@ export default function ProfileForm() {
       localStorage.setItem("profilePhoto", formData.profilePhoto);
     }
 
-    console.log("Form submitted:", formData);
     alert("✅ Profile setup completed successfully!");
-    navigate("/dashboard"); // Redirect to Dashboard
+    navigate("/dashboard");
   };
 
   return (
@@ -184,7 +226,7 @@ export default function ProfileForm() {
                 </div>
               </div>
 
-              {/* Profile Photo Upload */}
+              {/* Profile Photo */}
               <div>
                 <h3 className="font-semibold text-gray-800 mb-2">
                   Upload Profile Photo
@@ -260,7 +302,7 @@ export default function ProfileForm() {
                   Contact Information
                 </h3>
                 <div className="space-y-4">
-                  {/* Email with OTP */}
+                  {/* Email */}
                   <div>
                     <div className="flex gap-2 mb-2">
                       <input
@@ -289,7 +331,7 @@ export default function ProfileForm() {
                     />
                   </div>
 
-                  {/* Phone with OTP */}
+                  {/* Phone */}
                   <div>
                     <div className="flex gap-2 mb-2">
                       <input
@@ -323,7 +365,7 @@ export default function ProfileForm() {
                     type="text"
                     name="aadharNumber"
                     value={formData.aadharNumber}
-                    onChange={handleInputChange}
+                    onChange={handleAbcIdChange}
                     className="border p-2 rounded w-full"
                     placeholder="ABC ID *"
                   />
@@ -337,12 +379,28 @@ export default function ProfileForm() {
                 </h3>
                 <input
                   type="text"
-                  name="skills"
-                  value={formData.skills}
-                  onChange={handleInputChange}
+                  onKeyDown={handleSkillKeyDown}
                   className="border p-2 rounded w-full"
-                  placeholder="Enter skills (comma separated) *"
+                  placeholder="Type a skill and press Enter"
                 />
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {skillsList.map((skill, idx) => (
+                    <span
+                      key={idx}
+                      className="flex items-center bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm"
+                    >
+                      {skill}
+                      <button
+                        type="button"
+                        onClick={() => removeSkill(skill)}
+                        className="ml-2 text-red-500 hover:text-red-700 font-bold"
+                      >
+                        ×
+                      </button>
+                    </span>
+                  ))}
+                </div>
+
                 <select
                   name="interest"
                   value={formData.interest}

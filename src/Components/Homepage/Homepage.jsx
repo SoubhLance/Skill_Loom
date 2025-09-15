@@ -464,9 +464,10 @@ export default function Homepage() {
 
           {/* Program Flow */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden mt-6">
-            <div className="bg-blue-600 text-white px-6 py-4">
-              <h3 className="text-lg font-semibold">Program Flow</h3>
+            <div className="bg-blue-600 text-white px-6 py-4 flex justify-center items-center">
+              <h3 className="text-lg font-semibold">How we operate</h3>
             </div>
+
             <div className="p-6 flex justify-center">
               <img
                 src={Programflow}
