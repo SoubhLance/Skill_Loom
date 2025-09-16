@@ -16,6 +16,12 @@ import ResumeAnalysis from "./Profile/ResumeAnalysis/ResumeAnalysis.jsx";
 import Doculoom from "./Profile/Doculoom/Doculoom.jsx";
 import SkillAssessment from "./Profile/SkillAssessment/SkillAssessment.jsx";
 import MyInternships from "./Profile/MyInternships/MyInternships.jsx";
+import RecruiterDashboard from "./Recruiter/RecruiterDashboard/RecruiterDashboard.jsx";
+import { auth } from "./firebase";
+
+
+
+
 
 import "./index.css";
 
@@ -37,6 +43,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/doculoom" element={<Doculoom />} />
       <Route path="/skill-assessment" element={<SkillAssessment />} />
       <Route path="/my-internships" element={<MyInternships />} />
+      <Route path="/recruiter-details" element={<RecruiterDashboard />} />
+
       
     </Routes>
   </BrowserRouter>

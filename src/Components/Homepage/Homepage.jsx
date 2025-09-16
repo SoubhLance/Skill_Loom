@@ -31,6 +31,7 @@ export default function Homepage() {
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [selectedRole, setSelectedRole] = useState(""); // Added role state
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [user, setUser] = useState(null);
 
@@ -63,9 +64,25 @@ export default function Homepage() {
     }
   };
 
-  // 🔹 Handle Login / Signup
+  // Reset form when modal opens/closes
+  const resetForm = () => {
+    setEmail("");
+    setPassword("");
+    setFullName("");
+    setConfirmPassword("");
+    setSelectedRole("");
+  };
+
+  // 🔹 Handle Login / Signup with Role Validation
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Check if role is selected
+    if (!selectedRole) {
+      alert("Please select whether you are a Student or Recruiter!");
+      return;
+    }
+
     try {
       if (activeTab === "signup") {
         if (password !== confirmPassword) {
@@ -78,26 +95,76 @@ export default function Homepage() {
         await signInWithEmailAndPassword(auth, email, password);
         alert("Login successful!");
       }
+      
+      // Store role information (you can save this to your database or user profile)
+      console.log("User role:", selectedRole);
+      // TODO: Save role to database or user profile
+      
       setShowLoginModal(false);
-      navigate("/resume-upload");
+      resetForm();
+      
+      // Navigate based on user role
+      if (selectedRole === 'recruiter') {
+        navigate("/recruiter-details");
+      } else {
+        navigate("/resume-upload");
+      }
     } catch (error) {
       alert(error.message);
       console.error(error);
     }
   };
 
-  // 🔹 Handle Google Login
-  const googleProvider = new GoogleAuthProvider();
-  const handleGoogleLogin = async () => {
-    try {
-      await signInWithPopup(auth, googleProvider);
-      alert("Google login successful!");
-      setShowLoginModal(false);
+  // Google Login
+const googleProvider = new GoogleAuthProvider();
+let isSigningIn = false;
+
+const handleGoogleLogin = async () => {
+  if (!selectedRole) {
+    alert("Please select whether you are a Student or Recruiter before continuing with Google!");
+    return;
+  }
+
+  if (isSigningIn) return; // Prevent multiple popups
+  isSigningIn = true;
+
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+
+    console.log("Google login successful!", user.email, "Role:", selectedRole);
+    
+    // Save role info here if needed (e.g., Firestore)
+    // await saveUserRole(user.uid, selectedRole);
+
+    setShowLoginModal(false);
+    resetForm();
+
+    // Navigate after login is complete
+    if (selectedRole === "recruiter") {
+      navigate("/recruiter-details");
+    } else {
       navigate("/resume-upload");
-    } catch (error) {
-      alert(error.message);
-      console.error(error);
     }
+  } catch (error) {
+    if (error.code !== "auth/cancelled-popup-request") {
+      alert(error.message);
+    }
+    console.error("Google login error:", error);
+  } finally {
+    isSigningIn = false;
+  }
+};
+
+
+  // Handle Phone Login (placeholder for future implementation)
+  const handlePhoneLogin = () => {
+    if (!selectedRole) {
+      alert("Please select whether you are a Student or Recruiter before continuing with Phone!");
+      return;
+    }
+    // TODO: Implement phone authentication
+    alert("Phone authentication coming soon!");
   };
 
   // 🔹 Handle Logout
@@ -108,6 +175,12 @@ export default function Homepage() {
     } catch (error) {
       console.error(error);
     }
+  };
+
+  // Handle modal close
+  const handleModalClose = () => {
+    setShowLoginModal(false);
+    resetForm();
   };
 
   // Login Modal Component
@@ -122,7 +195,7 @@ export default function Homepage() {
         <div className="relative z-10 p-6">
           {/* Close button */}
           <button
-            onClick={() => setShowLoginModal(false)}
+            onClick={handleModalClose}
             className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-xl font-bold"
           >
             ×
@@ -185,6 +258,7 @@ export default function Homepage() {
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   className="w-full px-3 py-2 border rounded-lg text-xs focus:outline-none focus:ring focus:ring-orange-200"
+                  required
                 />
               </div>
             )}
@@ -199,6 +273,7 @@ export default function Homepage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-3 py-2 border rounded-lg text-xs focus:outline-none focus:ring focus:ring-orange-200"
+                required
               />
             </div>
 
@@ -206,24 +281,18 @@ export default function Homepage() {
               <div className="flex justify-between items-center mb-1">
                 <label className="block text-xs font-medium">Password</label>
                 {activeTab === "login" && (
-                  <a
-                    href="#"
-                    className="text-xs text-orange-600 hover:underline"
-                  >
+                  <a href="#" className="text-xs text-orange-600 hover:underline">
                     Forgot password?
                   </a>
                 )}
               </div>
               <input
                 type="password"
-                placeholder={
-                  activeTab === "login"
-                    ? "Enter your password"
-                    : "Create a password"
-                }
+                placeholder={activeTab === "login" ? "Enter your password" : "Create a password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full px-3 py-2 border rounded-lg text-xs focus:outline-none focus:ring focus:ring-orange-200"
+                required
               />
             </div>
 
@@ -238,9 +307,44 @@ export default function Homepage() {
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   className="w-full px-3 py-2 border rounded-lg text-xs focus:outline-none focus:ring focus:ring-orange-200"
+                  required
                 />
               </div>
             )}
+
+            {/* 🔹 Student or Recruiter choice - Made Required */}
+            <div className="mt-3">
+              <p className="text-xs font-medium mb-2 text-red-600">
+                Are you a Student or Recruiter? <span className="text-red-500">*</span>
+              </p>
+              <div className="flex items-center gap-4">
+                <label className="flex items-center text-xs cursor-pointer">
+                  <input
+                    type="radio"
+                    name="role"
+                    value="student"
+                    checked={selectedRole === "student"}
+                    onChange={(e) => setSelectedRole(e.target.value)}
+                    className="form-radio text-orange-500 rounded-full"
+                  />
+                  <span className="ml-2">Student</span>
+                </label>
+                <label className="flex items-center text-xs cursor-pointer">
+                  <input
+                    type="radio"
+                    name="role"
+                    value="recruiter"
+                    checked={selectedRole === "recruiter"}
+                    onChange={(e) => setSelectedRole(e.target.value)}
+                    className="form-radio text-orange-500 rounded-full"
+                  />
+                  <span className="ml-2">Recruiter</span>
+                </label>
+              </div>
+              {!selectedRole && (
+                <p className="text-red-500 text-xs mt-1">Please select your role to continue</p>
+              )}
+            </div>
 
             <button
               type="submit"
@@ -267,7 +371,10 @@ export default function Homepage() {
               <i className="fa-brands fa-google text-orange-400"></i>{" "}
               Continue with Google
             </button>
-            <button className="w-full flex items-center justify-center gap-2 border rounded-lg py-2 text-xs hover:bg-orange-50 hover:border-orange-200 transition-all">
+            <button 
+              onClick={handlePhoneLogin}
+              className="w-full flex items-center justify-center gap-2 border rounded-lg py-2 text-xs hover:bg-orange-50 hover:border-orange-200 transition-all"
+            >
               <i className="fa-solid fa-phone text-orange-400"></i>{" "}
               Continue with Phone
             </button>
